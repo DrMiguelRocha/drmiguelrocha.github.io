@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+
   <meta charset="UTF-8">
 
   <meta name="viewport"
@@ -13,7 +14,7 @@
 
   <meta
     name="description"
-    content="Consulta de Medicina Interna con el Dr. José Miguel Rocha Sánchez. Atención médica integral en Huamantla, Tlaxcala y Puebla, Puebla."
+    content="Dr. José Miguel Rocha Sánchez, Médico Internista. Consulta de Medicina Interna en Puebla y atención programada en Huamantla, Tlaxcala."
   >
 
   <!-- TIPOGRAFÍA -->
@@ -37,7 +38,7 @@
 
     :root {
 
-      --azul-profundo: #071b2e;
+      --azul-profundo: #06192b;
       --azul-oscuro: #0a2d4d;
       --azul-principal: #0d4772;
       --azul-medio: #176a9e;
@@ -144,9 +145,6 @@
     }
 
 
-
-    /* LOGOTIPO */
-
     .brand {
 
       display: flex;
@@ -201,16 +199,13 @@
     }
 
 
-
-    /* MENÚ */
-
     .menu {
 
       display: flex;
 
       align-items: center;
 
-      gap: 25px;
+      gap: 24px;
 
     }
 
@@ -223,7 +218,7 @@
 
       color: #354e62;
 
-      transition: 0.2s;
+      transition: 0.2s ease;
 
     }
 
@@ -254,7 +249,7 @@
 
         radial-gradient(
           circle at 15% 15%,
-          rgba(55, 147, 204, 0.22),
+          rgba(55,147,204,0.22),
           transparent 32%
         ),
 
@@ -268,7 +263,6 @@
       overflow: hidden;
 
     }
-
 
 
     .hero-grid {
@@ -288,9 +282,6 @@
     }
 
 
-
-    /* TEXTO */
-
     .hero-tag {
 
       display: inline-block;
@@ -299,7 +290,7 @@
 
       margin-bottom: 20px;
 
-      border: 1px solid rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.20);
 
       border-radius: 100px;
 
@@ -358,9 +349,6 @@
 
     }
 
-
-
-    /* BOTONES */
 
     .hero-buttons {
 
@@ -432,9 +420,6 @@
     }
 
 
-
-    /* DATOS RÁPIDOS */
-
     .hero-features {
 
       display: grid;
@@ -482,11 +467,9 @@
 
 
 
-    /* FOTO */
+    /* FOTO PRINCIPAL */
 
     .hero-photo-wrapper {
-
-      position: relative;
 
       display: flex;
 
@@ -531,7 +514,7 @@
 
 
     /* =========================================
-       SECCIONES GENERALES
+       SECCIONES
     ========================================= */
 
     section {
@@ -552,7 +535,7 @@
     }
 
 
-    .section-heading .eyebrow {
+    .eyebrow {
 
       display: block;
 
@@ -793,7 +776,7 @@
 
 
     /* =========================================
-       ÁREAS DE ATENCIÓN
+       ÁREAS
     ========================================= */
 
     .areas-grid {
@@ -968,7 +951,7 @@
 
     .locations-grid {
 
-      max-width: 850px;
+      max-width: 1000px;
 
       margin: auto;
 
@@ -985,8 +968,6 @@
 
       padding: 34px;
 
-      text-align: center;
-
       border: 1px solid rgba(255,255,255,0.15);
 
       border-radius: 20px;
@@ -996,20 +977,189 @@
     }
 
 
+    .location-label {
+
+      display: block;
+
+      color: #a9d2ec;
+
+      font-size: 10px;
+
+      font-weight: 800;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 8px;
+
+    }
+
+
     .location-card h3 {
 
-      font-size: 21px;
+      font-size: 23px;
 
-      margin-bottom: 3px;
+      margin-bottom: 5px;
 
     }
 
 
     .location-card p {
 
-      color: #cbdce8;
+      color: #d5e3ec;
 
       font-size: 14px;
+
+    }
+
+
+    .location-description {
+
+      margin-top: 12px;
+
+      line-height: 1.7;
+
+    }
+
+
+    .location-button {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-height: 46px;
+
+      margin-top: 20px;
+
+      padding: 0 20px;
+
+      border-radius: 10px;
+
+      background: white;
+
+      color: var(--azul-principal);
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      transition: 0.2s ease;
+
+    }
+
+
+    .location-button:hover {
+
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 8px 20px rgba(0,0,0,0.15);
+
+    }
+
+
+
+    /* =========================================
+       MAPA
+    ========================================= */
+
+    .map-section {
+
+      max-width: 1000px;
+
+      margin: 35px auto 0;
+
+      display: grid;
+
+      grid-template-columns: 0.70fr 1.30fr;
+
+      overflow: hidden;
+
+      border-radius: 22px;
+
+      background: white;
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,0.14);
+
+    }
+
+
+    .map-info {
+
+      padding: 35px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      background: white;
+
+      color: #1d2c39;
+
+    }
+
+
+    .map-info .location-label {
+
+      color: var(--azul-medio);
+
+    }
+
+
+    .map-info h3 {
+
+      color: var(--azul-oscuro);
+
+      font-size: 24px;
+
+      margin: 8px 0 12px;
+
+    }
+
+
+    .map-info p {
+
+      color: var(--gris-texto);
+
+      font-size: 14px;
+
+    }
+
+
+    .map-info .location-button {
+
+      align-self: flex-start;
+
+      background: var(--azul-principal);
+
+      color: white;
+
+    }
+
+
+    .map-container {
+
+      min-height: 380px;
+
+    }
+
+
+    .map-container iframe {
+
+      display: block;
+
+      width: 100%;
+
+      height: 100%;
+
+      min-height: 380px;
+
+      border: 0;
 
     }
 
@@ -1026,62 +1176,317 @@
     }
 
 
-    .contact-box {
+    .contact-main {
 
-      max-width: 900px;
+      max-width: 1000px;
 
       margin: auto;
 
-      padding: 48px 30px;
+      display: grid;
 
-      text-align: center;
+      grid-template-columns: 1.15fr 0.85fr;
 
-      border: 1px solid var(--borde);
-
-      border-radius: 24px;
-
-      box-shadow:
-        0 15px 45px rgba(13,71,114,0.07);
+      gap: 25px;
 
     }
 
 
-    .contact-box img {
+    .contact-info {
 
-      width: 90px;
+      padding: 42px;
 
-      margin: 0 auto 20px;
+      background:
+
+        linear-gradient(
+          135deg,
+          #071b2e,
+          #0d4772
+        );
+
+      color: white;
+
+      border-radius: 25px;
+
+      box-shadow:
+        0 18px 45px rgba(7,27,46,0.13);
+
+    }
+
+
+    .contact-logo {
+
+      width: 82px;
+
+      margin-bottom: 22px;
 
       border-radius: 14px;
 
     }
 
 
-    .contact-box h2 {
+    .contact-info h3 {
 
-      color: var(--azul-oscuro);
+      font-size: 24px;
 
-      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      line-height: 1.25;
 
-      margin-bottom: 12px;
+      margin-bottom: 5px;
 
     }
 
 
-    .contact-box p {
+    .contact-specialty {
 
-      max-width: 650px;
+      display: block;
 
-      margin: 0 auto 25px;
+      color: #bfe2f6;
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      margin-bottom: 20px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+
+    }
+
+
+    .contact-info p {
+
+      max-width: 550px;
+
+      color: #dbe9f3;
+
+      font-size: 14px;
+
+      margin-bottom: 28px;
+
+    }
+
+
+    .contact-actions {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+      margin-bottom: 20px;
+
+    }
+
+
+    .contact-button {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-height: 50px;
+
+      padding: 0 22px;
+
+      border-radius: 10px;
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      transition: 0.2s ease;
+
+    }
+
+
+    .contact-button:hover {
+
+      transform: translateY(-2px);
+
+    }
+
+
+    .contact-button.whatsapp {
+
+      background: white;
+
+      color: var(--azul-principal);
+
+    }
+
+
+    .contact-button.phone {
+
+      background: rgba(255,255,255,0.08);
+
+      color: white;
+
+      border:
+        1px solid rgba(255,255,255,0.25);
+
+    }
+
+
+    .phone-number {
+
+      display: inline-block;
+
+      color: #cce6f5;
+
+      font-weight: 600;
+
+      font-size: 15px;
+
+    }
+
+
+    .contact-locations {
+
+      display: grid;
+
+      grid-template-columns: 1fr;
+
+      gap: 18px;
+
+    }
+
+
+    .contact-location-card {
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      min-height: 190px;
+
+      padding: 30px;
+
+      border: 1px solid var(--borde);
+
+      border-radius: 21px;
+
+      background: #f8fafc;
+
+    }
+
+
+    .contact-location-card .location-label {
+
+      color: var(--azul-medio);
+
+    }
+
+
+    .contact-location-card h3 {
+
+      color: var(--azul-oscuro);
+
+      font-size: 23px;
+
+      margin-bottom: 2px;
+
+    }
+
+
+    .contact-location-card p {
 
       color: var(--gris-texto);
+
+      margin-bottom: 10px;
+
+    }
+
+
+    .location-note {
+
+      color: var(--gris-suave);
+
+      font-size: 12px;
+
+    }
+
+
+    .contact-bottom {
+
+      max-width: 850px;
+
+      margin: 28px auto 0;
+
+      text-align: center;
+
+    }
+
+
+    .contact-bottom p {
+
+      color: var(--gris-suave);
+
+      font-size: 13px;
 
     }
 
 
 
     /* =========================================
-       PIE DE PÁGINA
+       WHATSAPP FLOTANTE
+    ========================================= */
+
+    .floating-whatsapp {
+
+      position: fixed;
+
+      right: 22px;
+
+      bottom: 22px;
+
+      z-index: 2000;
+
+      width: 60px;
+
+      height: 60px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: #25d366;
+
+      color: white;
+
+      font-size: 14px;
+
+      font-weight: 800;
+
+      box-shadow:
+        0 12px 30px rgba(0,0,0,0.20);
+
+      transition: 0.2s ease;
+
+    }
+
+
+    .floating-whatsapp:hover {
+
+      transform:
+        translateY(-3px)
+        scale(1.03);
+
+    }
+
+
+
+    /* =========================================
+       FOOTER
     ========================================= */
 
     footer {
@@ -1110,7 +1515,7 @@
 
 
     /* =========================================
-       CELULAR
+       TABLET
     ========================================= */
 
     @media (max-width: 950px) {
@@ -1196,6 +1601,10 @@
 
 
 
+    /* =========================================
+       CELULAR
+    ========================================= */
+
     @media (max-width: 760px) {
 
       header {
@@ -1280,7 +1689,6 @@
 
 
       .services-grid,
-
       .studies-grid,
       .locations-grid {
 
@@ -1296,9 +1704,65 @@
       }
 
 
-      .contact-box {
+      .map-section {
 
-        padding: 35px 22px;
+        grid-template-columns: 1fr;
+
+      }
+
+
+      .map-info {
+
+        padding: 28px 24px;
+
+      }
+
+
+      .map-container,
+      .map-container iframe {
+
+        min-height: 320px;
+
+      }
+
+
+      .contact-main {
+
+        grid-template-columns: 1fr;
+
+      }
+
+
+      .contact-info {
+
+        padding: 30px 24px;
+
+      }
+
+
+      .contact-actions {
+
+        flex-direction: column;
+
+      }
+
+
+      .contact-button {
+
+        width: 100%;
+
+      }
+
+
+      .floating-whatsapp {
+
+        width: 56px;
+
+        height: 56px;
+
+        right: 16px;
+
+        bottom: 16px;
 
       }
 
@@ -1413,6 +1877,7 @@
 
 
 
+
   <main>
 
 
@@ -1450,9 +1915,9 @@
 
           <p class="hero-description">
 
-            Atención médica especializada para la
-            prevención, diagnóstico, tratamiento y
-            seguimiento de enfermedades del adulto.
+            Atención médica especializada para la prevención,
+            diagnóstico, tratamiento y seguimiento de
+            enfermedades del adulto.
 
           </p>
 
@@ -1462,7 +1927,9 @@
 
 
             <a
-              href="#contacto"
+              href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20consulta%20de%20Medicina%20Interna."
+              target="_blank"
+              rel="noopener"
               class="button button-primary"
             >
               Agenda tu consulta
@@ -1513,11 +1980,11 @@
             <div class="hero-feature">
 
               <strong>
-                Dos ubicaciones
+                Puebla y Huamantla
               </strong>
 
               <span>
-                Huamantla y Puebla.
+                Consultorio en Puebla y atención programada en Huamantla.
               </span>
 
             </div>
@@ -1555,6 +2022,7 @@
 
 
 
+
     <!-- =========================================
          MEDICINA INTERNA
     ========================================== -->
@@ -1576,8 +2044,7 @@
           </h2>
 
           <p>
-            Una visión completa de la salud
-            del paciente adulto.
+            Una visión completa de la salud del paciente adulto.
           </p>
 
         </div>
@@ -1589,28 +2056,25 @@
 
           <p>
 
-            La Medicina Interna se especializa en la
-            prevención, diagnóstico y tratamiento de
-            enfermedades del adulto.
+            La Medicina Interna se especializa en la prevención,
+            diagnóstico y tratamiento de enfermedades del adulto.
 
           </p>
 
 
           <p>
 
-            Permite integrar diferentes síntomas,
-            antecedentes, enfermedades, medicamentos
-            y factores de riesgo para comprender el
-            estado de salud del paciente como un conjunto.
+            Permite integrar diferentes síntomas, antecedentes,
+            enfermedades, medicamentos y factores de riesgo para
+            comprender el estado de salud del paciente como un conjunto.
 
           </p>
 
 
           <p>
 
-            Es especialmente útil cuando existen
-            múltiples padecimientos, síntomas persistentes
-            o cuadros clínicos que requieren una
+            Es especialmente útil cuando existen múltiples padecimientos,
+            síntomas persistentes o cuadros clínicos que requieren una
             evaluación integral.
 
           </p>
@@ -1623,6 +2087,7 @@
 
 
     </section>
+
 
 
 
@@ -1647,8 +2112,7 @@
           </h2>
 
           <p>
-            Atención enfocada en prevención,
-            diagnóstico y seguimiento.
+            Atención enfocada en prevención, diagnóstico y seguimiento.
           </p>
 
         </div>
@@ -1726,8 +2190,8 @@
             </h3>
 
             <p>
-              Evaluación médica integral
-              antes de procedimientos quirúrgicos.
+              Evaluación médica integral antes
+              de procedimientos quirúrgicos.
             </p>
 
           </article>
@@ -1760,7 +2224,7 @@
             </span>
 
             <h3>
-              Pacientes con múltiples enfermedades
+              Múltiples enfermedades
             </h3>
 
             <p>
@@ -1778,6 +2242,7 @@
 
 
     </section>
+
 
 
 
@@ -1802,8 +2267,8 @@
           </h2>
 
           <p>
-            Herramientas complementarias
-            para una evaluación clínica más completa.
+            Herramientas complementarias para una
+            evaluación clínica más completa.
           </p>
 
         </div>
@@ -1822,7 +2287,7 @@
             <p>
               Monitoreo Ambulatorio de Presión Arterial
               para evaluar la presión durante 24 horas
-              y mejorar el diagnóstico y control de
+              y apoyar el diagnóstico y control de
               hipertensión arterial.
             </p>
 
@@ -1837,9 +2302,9 @@
             </h3>
 
             <p>
-              Registro de la actividad eléctrica
-              del corazón como herramienta de apoyo
-              en la evaluación cardiovascular.
+              Registro de la actividad eléctrica del corazón
+              como herramienta de apoyo en la evaluación
+              cardiovascular.
             </p>
 
           </article>
@@ -1852,6 +2317,7 @@
 
 
     </section>
+
 
 
 
@@ -1876,9 +2342,8 @@
           </h2>
 
           <p>
-            Evaluación de enfermedades
-            relacionadas con diferentes órganos
-            y sistemas.
+            Evaluación de enfermedades relacionadas
+            con diferentes órganos y sistemas.
           </p>
 
         </div>
@@ -1931,6 +2396,7 @@
 
 
 
+
     <!-- =========================================
          SOBRE MÍ
     ========================================== -->
@@ -1960,8 +2426,7 @@
         <div class="profile-content">
 
 
-          <span class="section-heading eyebrow"
-                style="text-align:left; margin:0 0 8px;">
+          <span class="eyebrow">
             Sobre mí
           </span>
 
@@ -1979,27 +2444,25 @@
           <p>
 
             Médico especialista en Medicina Interna
-            enfocado en la evaluación integral
-            del paciente adulto.
+            enfocado en la evaluación integral del paciente adulto.
 
           </p>
 
 
           <p>
 
-            Mi objetivo es integrar síntomas,
-            antecedentes, enfermedades,
-            estudios y tratamientos para brindar
-            una evaluación clínica completa.
+            La consulta busca integrar síntomas,
+            antecedentes, enfermedades, estudios y tratamientos
+            para obtener una visión completa del estado de salud
+            de cada paciente.
 
           </p>
 
 
           <p>
 
-            La atención se orienta a establecer
-            diagnósticos precisos, prevenir
-            complicaciones y definir estrategias
+            El objetivo es establecer diagnósticos precisos,
+            prevenir complicaciones y definir estrategias
             de tratamiento individualizadas.
 
           </p>
@@ -2012,6 +2475,7 @@
 
 
     </section>
+
 
 
 
@@ -2039,8 +2503,7 @@
           </h2>
 
           <p>
-            Atención disponible en Tlaxcala
-            y Puebla.
+            Consulta en Puebla y atención programada en Huamantla.
           </p>
 
         </div>
@@ -2050,29 +2513,142 @@
         <div class="locations-grid">
 
 
+          <!-- PUEBLA -->
+
           <div class="location-card">
+
+            <span class="location-label">
+              CONSULTORIO
+            </span>
+
+            <h3>
+              Puebla
+            </h3>
+
+            <p>
+              Blvd. 14 Sur 4302
+            </p>
+
+            <p>
+              Jardines de San Manuel
+            </p>
+
+            <p>
+              C.P. 72570, Puebla, Puebla
+            </p>
+
+
+            <a
+              href="https://maps.app.goo.gl/EGhUhLtQEeJP8uM38"
+              target="_blank"
+              rel="noopener"
+              class="location-button"
+            >
+              Cómo llegar
+            </a>
+
+          </div>
+
+
+
+          <!-- HUAMANTLA -->
+
+          <div class="location-card">
+
+            <span class="location-label">
+              ATENCIÓN PROGRAMADA
+            </span>
 
             <h3>
               Huamantla
             </h3>
 
             <p>
-              Tlaxcala
+              Huamantla, Tlaxcala
             </p>
+
+            <p class="location-description">
+
+              Consulta disponible en fechas programadas.
+              Solicita información sobre disponibilidad
+              y ubicación por WhatsApp.
+
+            </p>
+
+
+            <a
+              href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20la%20disponibilidad%20de%20consulta%20en%20Huamantla."
+              target="_blank"
+              rel="noopener"
+              class="location-button"
+            >
+              Consultar disponibilidad
+            </a>
+
+          </div>
+
+
+        </div>
+
+
+
+
+        <!-- MAPA PUEBLA -->
+
+        <div class="map-section">
+
+
+          <div class="map-info">
+
+
+            <span class="location-label">
+              UBICACIÓN EN PUEBLA
+            </span>
+
+
+            <h3>
+              Consultorio Puebla
+            </h3>
+
+
+            <p>
+              Blvd. 14 Sur 4302
+            </p>
+
+            <p>
+              Jardines de San Manuel
+            </p>
+
+            <p>
+              C.P. 72570, Puebla, Puebla
+            </p>
+
+
+            <a
+              href="https://maps.app.goo.gl/EGhUhLtQEeJP8uM38"
+              target="_blank"
+              rel="noopener"
+              class="location-button"
+            >
+              Abrir en Google Maps
+            </a>
+
 
           </div>
 
 
 
-          <div class="location-card">
+          <div class="map-container">
 
-            <h3>
-              Puebla
-            </h3>
 
-            <p>
-              Puebla
-            </p>
+            <iframe
+              src="https://www.google.com/maps?q=Blvrd%2014%20Sur%204302%2C%20Jardines%20de%20San%20Manuel%2C%20Puebla%2C%20Pue.&output=embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación del consultorio del Dr. José Miguel Rocha Sánchez en Puebla">
+            </iframe>
+
 
           </div>
 
@@ -2084,6 +2660,7 @@
 
 
     </section>
+
 
 
 
@@ -2100,49 +2677,169 @@
       <div class="container">
 
 
-        <div class="contact-box">
+        <div class="section-heading">
 
-
-          <img
-            src="images/logo-jmrs.png"
-            alt="Logotipo JMRS"
-          >
-
+          <span class="eyebrow">
+            Contacto
+          </span>
 
           <h2>
             Agenda tu consulta
           </h2>
 
-
           <p>
-
-            Para conocer horarios disponibles
-            o solicitar una cita, comunícate
-            directamente por WhatsApp.
-
+            Solicita información sobre disponibilidad,
+            horarios y citas de Medicina Interna.
           </p>
 
+        </div>
 
 
-          <!--
-          IMPORTANTE:
-          DESPUÉS CAMBIAREMOS 52TU_NUMERO
-          POR TU NÚMERO REAL
-          -->
+
+        <div class="contact-main">
 
 
-          <a
-            href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20consulta%20de%20Medicina%20Interna."
-            target="_blank"
-            class="button button-primary"
-            style="
-              background:#0d4772;
-              color:white;
-            "
-          >
-            Contactar por WhatsApp
-          </a>
+          <!-- CONTACTO PRINCIPAL -->
 
+          <div class="contact-info">
+
+
+            <img
+              src="images/logo-jmrs.png"
+              alt="Logotipo Dr. José Miguel Rocha Sánchez"
+              class="contact-logo"
+            >
+
+
+            <h3>
+              Dr. José Miguel Rocha Sánchez
+            </h3>
+
+
+            <span class="contact-specialty">
+              Medicina Interna
+            </span>
+
+
+            <p>
+
+              Atención médica integral del paciente adulto.
+              Consultorio en Puebla y atención programada
+              en Huamantla, Tlaxcala.
+
+            </p>
+
+
+
+            <div class="contact-actions">
+
+
+              <a
+                href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20consulta%20de%20Medicina%20Interna."
+                target="_blank"
+                rel="noopener"
+                class="contact-button whatsapp"
+              >
+                Agendar por WhatsApp
+              </a>
+
+
+              <a
+                href="tel:+522471012260"
+                class="contact-button phone"
+              >
+                Llamar
+              </a>
+
+
+            </div>
+
+
+
+            <a
+              href="tel:+522471012260"
+              class="phone-number"
+            >
+              +52 247 101 2260
+            </a>
+
+
+          </div>
+
+
+
+
+          <!-- RESUMEN DE SEDES -->
+
+          <div class="contact-locations">
+
+
+            <div class="contact-location-card">
+
+
+              <span class="location-label">
+                CONSULTORIO
+              </span>
+
+
+              <h3>
+                Puebla
+              </h3>
+
+
+              <p>
+                Puebla, Puebla
+              </p>
+
+
+              <span class="location-note">
+                Atención presencial con cita previa
+              </span>
+
+
+            </div>
+
+
+
+            <div class="contact-location-card">
+
+
+              <span class="location-label">
+                ATENCIÓN PROGRAMADA
+              </span>
+
+
+              <h3>
+                Huamantla
+              </h3>
+
+
+              <p>
+                Tlaxcala
+              </p>
+
+
+              <span class="location-note">
+                Consulta disponibilidad y ubicación por WhatsApp
+              </span>
+
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+
+        <div class="contact-bottom">
+
+          <p>
+            Para solicitar una cita, envía un mensaje
+            indicando tu nombre y la ciudad en la que deseas consultar.
+          </p>
 
         </div>
 
@@ -2154,6 +2851,7 @@
 
 
   </main>
+
 
 
 
@@ -2179,7 +2877,7 @@
 
 
     <p>
-      Huamantla, Tlaxcala · Puebla, Puebla
+      Puebla, Puebla · Huamantla, Tlaxcala
     </p>
 
 
@@ -2189,6 +2887,23 @@
 
 
   </footer>
+
+
+
+
+  <!-- =========================================
+       WHATSAPP FLOTANTE
+  ========================================== -->
+
+  <a
+    href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20consulta%20de%20Medicina%20Interna."
+    target="_blank"
+    rel="noopener"
+    class="floating-whatsapp"
+    aria-label="Agendar consulta por WhatsApp"
+  >
+    WA
+  </a>
 
 
 </body>
