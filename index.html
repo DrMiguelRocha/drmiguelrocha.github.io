@@ -49,6 +49,19 @@
   >
 
 
+  <!-- FAVICON -->
+
+  <link
+    rel="icon"
+    href="/images/logo-jmrs.png"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    href="/images/logo-jmrs.png"
+  >
+
+
   <!-- =========================================
        OPEN GRAPH
   ========================================== -->
@@ -90,7 +103,7 @@
 
 
   <!-- =========================================
-       TWITTER
+       TWITTER / VISTA PREVIA
   ========================================== -->
 
   <meta
@@ -121,68 +134,162 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+
     "@graph": [
 
       {
+        "@type": "WebSite",
+
+        "@id":
+        "https://drmiguelrocha.github.io/#website",
+
+        "url":
+        "https://drmiguelrocha.github.io/",
+
+        "name":
+        "Dr. José Miguel Rocha Sánchez | Medicina Interna",
+
+        "inLanguage":
+        "es-MX"
+      },
+
+
+      {
+        "@type": "WebPage",
+
+        "@id":
+        "https://drmiguelrocha.github.io/#webpage",
+
+        "url":
+        "https://drmiguelrocha.github.io/",
+
+        "name":
+        "Médico Internista en Puebla y Tlaxcala | Dr. José Miguel Rocha Sánchez",
+
+        "description":
+        "Consulta de Medicina Interna en Puebla y atención programada en Huamantla, Tlaxcala.",
+
+        "inLanguage":
+        "es-MX",
+
+        "isPartOf": {
+          "@id":
+          "https://drmiguelrocha.github.io/#website"
+        },
+
+        "about": {
+          "@id":
+          "https://drmiguelrocha.github.io/#doctor"
+        }
+      },
+
+
+      {
         "@type": "Person",
-        "@id": "https://drmiguelrocha.github.io/#doctor",
 
-        "name": "Dr. José Miguel Rocha Sánchez",
-        "givenName": "José Miguel",
-        "familyName": "Rocha Sánchez",
-        "jobTitle": "Médico Internista",
+        "@id":
+        "https://drmiguelrocha.github.io/#doctor",
 
-        "url": "https://drmiguelrocha.github.io/",
-        "image": "https://drmiguelrocha.github.io/images/dr-miguel-rocha.png",
+        "name":
+        "Dr. José Miguel Rocha Sánchez",
 
-        "telephone": "+52 247 101 2260",
+        "givenName":
+        "José Miguel",
+
+        "familyName":
+        "Rocha Sánchez",
+
+        "jobTitle":
+        "Médico Internista",
+
+        "url":
+        "https://drmiguelrocha.github.io/",
+
+        "image":
+        "https://drmiguelrocha.github.io/images/dr-miguel-rocha.png",
+
+        "telephone":
+        "+52 247 101 2260",
 
         "description":
         "Médico especialista en Medicina Interna. Consulta en Puebla y atención programada en Huamantla, Tlaxcala.",
 
         "alumniOf": [
+
           {
-            "@type": "CollegeOrUniversity",
-            "name": "Universidad Autónoma de Tlaxcala"
+            "@type":
+            "CollegeOrUniversity",
+
+            "name":
+            "Universidad Autónoma de Tlaxcala"
           },
+
           {
-            "@type": "CollegeOrUniversity",
-            "name": "Benemérita Universidad Autónoma de Puebla"
+            "@type":
+            "CollegeOrUniversity",
+
+            "name":
+            "Benemérita Universidad Autónoma de Puebla"
           }
+
         ],
 
         "hasCredential": [
 
           {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Cédula profesional de Médico Cirujano",
-            "identifier": "12355482"
+            "@type":
+            "EducationalOccupationalCredential",
+
+            "name":
+            "Cédula profesional de Médico Cirujano",
+
+            "identifier":
+            "12355482"
           },
 
           {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Cédula de Especialidad en Medicina Interna",
-            "identifier": "15715376"
+            "@type":
+            "EducationalOccupationalCredential",
+
+            "name":
+            "Cédula de Especialidad en Medicina Interna",
+
+            "identifier":
+            "15715376"
           },
 
           {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Certificación en Medicina Interna",
-            "identifier": "10204-26",
+            "@type":
+            "EducationalOccupationalCredential",
+
+            "name":
+            "Certificación en Medicina Interna",
+
+            "identifier":
+            "10204-26",
 
             "recognizedBy": {
-              "@type": "Organization",
-              "name": "Consejo Mexicano de Medicina Interna"
+
+              "@type":
+              "Organization",
+
+              "name":
+              "Consejo Mexicano de Medicina Interna"
             }
+
           }
 
         ]
+
       },
 
 
       {
-        "@type": "Physician",
-        "@id": "https://drmiguelrocha.github.io/#consultorio",
+        "@type":
+        "Physician",
+
+        "@id":
+        "https://drmiguelrocha.github.io/#consultorio",
 
         "name":
         "Dr. José Miguel Rocha Sánchez - Medicina Interna",
@@ -203,42 +310,66 @@
         "Consulta de Medicina Interna en Puebla y atención programada en Huamantla, Tlaxcala.",
 
         "employee": {
-          "@id": "https://drmiguelrocha.github.io/#doctor"
+          "@id":
+          "https://drmiguelrocha.github.io/#doctor"
         },
 
         "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Blvd. 14 Sur 4302",
-          "addressLocality": "Puebla",
-          "addressRegion": "Puebla",
-          "postalCode": "72570",
-          "addressCountry": "MX"
+
+          "@type":
+          "PostalAddress",
+
+          "streetAddress":
+          "Blvd. 14 Sur 4302",
+
+          "addressLocality":
+          "Puebla",
+
+          "addressRegion":
+          "Puebla",
+
+          "postalCode":
+          "72570",
+
+          "addressCountry":
+          "MX"
         },
 
         "areaServed": [
 
           {
-            "@type": "City",
-            "name": "Puebla, Puebla"
+            "@type":
+            "City",
+
+            "name":
+            "Puebla, Puebla"
           },
 
           {
-            "@type": "City",
-            "name": "Huamantla, Tlaxcala"
+            "@type":
+            "City",
+
+            "name":
+            "Huamantla, Tlaxcala"
           },
 
           {
-            "@type": "State",
-            "name": "Tlaxcala"
+            "@type":
+            "State",
+
+            "name":
+            "Tlaxcala"
           }
 
         ],
 
         "hasMap":
         "https://maps.app.goo.gl/EGhUhLtQEeJP8uM38"
+
       }
 
     ]
+
   }
   </script>
 
@@ -301,9 +432,11 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
+
 
 body {
 
@@ -313,23 +446,31 @@ body {
     sans-serif;
 
   color: #1d2c39;
+
   background: white;
+
   line-height: 1.65;
 }
+
 
 img {
   display: block;
   max-width: 100%;
 }
 
+
 a {
   text-decoration: none;
 }
 
+
 .container {
+
   width: min(1180px, 92%);
+
   margin: auto;
 }
+
 
 section {
   padding: 90px 0;
@@ -343,7 +484,9 @@ section {
 header {
 
   position: sticky;
+
   top: 0;
+
   z-index: 1000;
 
   background:
@@ -356,34 +499,43 @@ header {
     1px solid #e6edf2;
 }
 
+
 .navbar {
 
   min-height: 78px;
 
   display: flex;
-  justify-content: space-between;
+
+  justify-content:
+    space-between;
+
   align-items: center;
 
   gap: 25px;
 }
 
+
 .brand {
 
   display: flex;
+
   align-items: center;
 
   gap: 12px;
 }
 
+
 .brand img {
 
   width: 52px;
+
   height: 52px;
 
   object-fit: contain;
 
   border-radius: 10px;
 }
+
 
 .brand-info strong {
 
@@ -393,8 +545,10 @@ header {
     var(--azul-oscuro);
 
   font-size: 14px;
+
   line-height: 1.2;
 }
+
 
 .brand-info span {
 
@@ -408,29 +562,38 @@ header {
   font-size: 11px;
 
   letter-spacing: 1px;
-  text-transform: uppercase;
+
+  text-transform:
+    uppercase;
 }
+
 
 .menu {
 
   display: flex;
+
   align-items: center;
 
   gap: 17px;
 }
+
 
 .menu a {
 
   color: #354e62;
 
   font-size: 12px;
+
   font-weight: 600;
 
   transition: .2s;
 }
 
+
 .menu a:hover {
-  color: var(--azul-medio);
+
+  color:
+    var(--azul-medio);
 }
 
 
@@ -443,6 +606,7 @@ header {
   min-height: 650px;
 
   display: flex;
+
   align-items: center;
 
   color: white;
@@ -465,6 +629,7 @@ header {
   overflow: hidden;
 }
 
+
 .hero-grid {
 
   display: grid;
@@ -480,11 +645,13 @@ header {
   padding: 65px 0;
 }
 
+
 .hero-tag {
 
   display: inline-block;
 
   padding: 8px 15px;
+
   margin-bottom: 20px;
 
   border:
@@ -498,14 +665,17 @@ header {
   color: #d9edf9;
 
   font-size: 12px;
+
   font-weight: 700;
 
   letter-spacing: 2px;
 }
 
+
 .hero h1 {
 
   max-width: 700px;
+
   margin-bottom: 14px;
 
   color: white;
@@ -514,8 +684,10 @@ header {
     clamp(2.5rem,5vw,4.5rem);
 
   line-height: 1.04;
+
   font-weight: 800;
 }
+
 
 .hero h2 {
 
@@ -529,9 +701,11 @@ header {
   font-weight: 500;
 }
 
+
 .hero-description {
 
   max-width: 650px;
+
   margin-bottom: 30px;
 
   color: #e1edf5;
@@ -540,11 +714,14 @@ header {
 }
 
 
-/* BOTONES */
+/* =========================================
+   BOTONES
+========================================= */
 
 .hero-buttons {
 
   display: flex;
+
   flex-wrap: wrap;
 
   gap: 14px;
@@ -552,10 +729,13 @@ header {
   margin-bottom: 34px;
 }
 
+
 .button {
 
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
 
   min-height: 50px;
@@ -565,20 +745,28 @@ header {
   border-radius: 10px;
 
   font-size: 14px;
+
   font-weight: 700;
 
   transition: .2s ease;
 }
 
+
 .button-primary {
 
   background: white;
-  color: var(--azul-principal);
+
+  color:
+    var(--azul-principal);
 }
 
+
 .button-primary:hover {
-  transform: translateY(-2px);
+
+  transform:
+    translateY(-2px);
 }
+
 
 .button-outline {
 
@@ -591,21 +779,28 @@ header {
     rgba(255,255,255,.04);
 }
 
+
 .button-outline:hover {
-  background: rgba(255,255,255,.10);
+
+  background:
+    rgba(255,255,255,.10);
 }
 
 
-/* HERO FEATURES */
+/* =========================================
+   HERO FEATURES
+========================================= */
 
 .hero-features {
 
   display: grid;
+
   grid-template-columns:
     repeat(3,1fr);
 
   gap: 12px;
 }
+
 
 .hero-feature {
 
@@ -620,15 +815,18 @@ header {
   border-radius: 13px;
 }
 
+
 .hero-feature strong {
 
   display: block;
+
   margin-bottom: 3px;
 
   color: white;
 
   font-size: 13px;
 }
+
 
 .hero-feature span {
 
@@ -638,17 +836,22 @@ header {
 }
 
 
-/* FOTO HERO */
+/* =========================================
+   FOTO HERO
+========================================= */
 
 .hero-photo-wrapper {
 
   display: flex;
+
   justify-content: center;
 }
+
 
 .hero-photo-card {
 
   width: 100%;
+
   max-width: 470px;
 
   padding: 14px;
@@ -661,8 +864,10 @@ header {
   background:
     rgba(255,255,255,.07);
 
-  box-shadow: var(--sombra);
+  box-shadow:
+    var(--sombra);
 }
+
 
 .hero-photo-card img {
 
@@ -672,7 +877,9 @@ header {
     4 / 5;
 
   object-fit: cover;
-  object-position: center top;
+
+  object-position:
+    center top;
 
   border-radius: 22px;
 }
@@ -692,6 +899,7 @@ header {
   text-align: center;
 }
 
+
 .eyebrow {
 
   display: block;
@@ -702,11 +910,14 @@ header {
     var(--azul-medio);
 
   font-size: 12px;
+
   font-weight: 800;
 
   letter-spacing: 2px;
+
   text-transform: uppercase;
 }
+
 
 .section-heading h2 {
 
@@ -720,6 +931,7 @@ header {
 
   line-height: 1.2;
 }
+
 
 .section-heading p {
 
@@ -735,12 +947,16 @@ header {
 ========================================= */
 
 .internal-medicine {
-  background: var(--gris-fondo);
+
+  background:
+    var(--gris-fondo);
 }
+
 
 .medicine-box {
 
   max-width: 980px;
+
   margin: auto;
 
   padding: 38px;
@@ -756,6 +972,7 @@ header {
     0 10px 30px rgba(13,71,114,.05);
 }
 
+
 .medicine-box p {
 
   margin-bottom: 16px;
@@ -766,7 +983,9 @@ header {
   font-size: 16px;
 }
 
+
 .medicine-box p:last-child {
+
   margin-bottom: 0;
 }
 
@@ -785,6 +1004,7 @@ header {
   gap: 22px;
 }
 
+
 .service-card {
 
   padding: 28px;
@@ -799,6 +1019,7 @@ header {
   transition: .25s ease;
 }
 
+
 .service-card:hover {
 
   transform:
@@ -808,13 +1029,17 @@ header {
     0 16px 35px rgba(13,71,114,.09);
 }
 
+
 .service-number {
 
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
 
   width: 38px;
+
   height: 38px;
 
   margin-bottom: 18px;
@@ -827,8 +1052,10 @@ header {
     var(--azul-principal);
 
   font-size: 13px;
+
   font-weight: 800;
 }
+
 
 .service-card h3 {
 
@@ -840,6 +1067,7 @@ header {
   font-size: 17px;
 }
 
+
 .service-card p {
 
   color:
@@ -849,13 +1077,38 @@ header {
 }
 
 
+.service-link {
+
+  display: inline-block;
+
+  margin-top: 15px;
+
+  color:
+    var(--azul-principal);
+
+  font-size: 13px;
+
+  font-weight: 800;
+}
+
+
+.service-link:hover {
+
+  color:
+    var(--azul-oscuro);
+}
+
+
 /* =========================================
    ESTUDIOS
 ========================================= */
 
 .studies {
-  background: var(--gris-fondo);
+
+  background:
+    var(--gris-fondo);
 }
+
 
 .studies-grid {
 
@@ -867,8 +1120,10 @@ header {
   gap: 25px;
 
   max-width: 900px;
+
   margin: auto;
 }
+
 
 .study-card {
 
@@ -882,6 +1137,7 @@ header {
   border-radius: 20px;
 }
 
+
 .study-card h3 {
 
   margin-bottom: 9px;
@@ -891,6 +1147,7 @@ header {
 
   font-size: 19px;
 }
+
 
 .study-card p {
 
@@ -915,6 +1172,7 @@ header {
   gap: 15px;
 }
 
+
 .area {
 
   min-height: 84px;
@@ -922,6 +1180,7 @@ header {
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   padding: 16px;
@@ -939,6 +1198,7 @@ header {
   border-radius: 15px;
 
   font-size: 14px;
+
   font-weight: 700;
 }
 
@@ -948,8 +1208,11 @@ header {
 ========================================= */
 
 .when-internist {
-  background: var(--gris-fondo);
+
+  background:
+    var(--gris-fondo);
 }
+
 
 .when-grid {
 
@@ -961,8 +1224,10 @@ header {
   gap: 18px;
 
   max-width: 1000px;
+
   margin: auto;
 }
+
 
 .when-card {
 
@@ -981,6 +1246,7 @@ header {
   transition: .25s ease;
 }
 
+
 .when-card:hover {
 
   transform:
@@ -990,19 +1256,23 @@ header {
     0 14px 32px rgba(13,71,114,.07);
 }
 
+
 .when-icon {
 
   position: absolute;
 
   left: 24px;
+
   top: 27px;
 
   width: 34px;
+
   height: 34px;
 
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   background: #e7f1f7;
@@ -1013,8 +1283,10 @@ header {
   border-radius: 10px;
 
   font-size: 11px;
+
   font-weight: 800;
 }
+
 
 .when-card h3 {
 
@@ -1026,6 +1298,7 @@ header {
   font-size: 16px;
 }
 
+
 .when-card p {
 
   color:
@@ -1033,6 +1306,7 @@ header {
 
   font-size: 14px;
 }
+
 
 .when-cta {
 
@@ -1043,6 +1317,7 @@ header {
 
   text-align: center;
 }
+
 
 .when-cta p {
 
@@ -1058,8 +1333,10 @@ header {
 ========================================= */
 
 .about-me {
+
   background: white;
 }
+
 
 .profile-grid {
 
@@ -1073,6 +1350,7 @@ header {
 
   gap: 50px;
 }
+
 
 .profile-photo {
 
@@ -1089,12 +1367,14 @@ header {
     0 15px 40px rgba(7,27,46,.08);
 }
 
+
 .profile-photo img {
 
   width: 100%;
 
   border-radius: 18px;
 }
+
 
 .profile-content h2 {
 
@@ -1107,6 +1387,7 @@ header {
     clamp(1.8rem,4vw,2.7rem);
 }
 
+
 .profile-specialty {
 
   display: block;
@@ -1117,8 +1398,10 @@ header {
     var(--azul-medio);
 
   font-size: 15px;
+
   font-weight: 700;
 }
+
 
 .profile-certified {
 
@@ -1136,8 +1419,10 @@ header {
   border-radius: 9px;
 
   font-size: 12px;
+
   font-weight: 700;
 }
+
 
 .profile-content p {
 
@@ -1155,8 +1440,11 @@ header {
 ========================================= */
 
 .credentials {
-  background: var(--gris-fondo);
+
+  background:
+    var(--gris-fondo);
 }
+
 
 .credentials-grid {
 
@@ -1167,6 +1455,7 @@ header {
 
   gap: 22px;
 }
+
 
 .credential-card {
 
@@ -1182,6 +1471,7 @@ header {
   transition: .25s ease;
 }
 
+
 .credential-card:hover {
 
   transform:
@@ -1190,6 +1480,7 @@ header {
   box-shadow:
     0 16px 36px rgba(13,71,114,.08);
 }
+
 
 .credential-type {
 
@@ -1201,11 +1492,14 @@ header {
     var(--azul-medio);
 
   font-size: 10px;
+
   font-weight: 800;
 
   letter-spacing: 1.5px;
+
   text-transform: uppercase;
 }
+
 
 .credential-card h3 {
 
@@ -1217,6 +1511,7 @@ header {
   font-size: 18px;
 }
 
+
 .credential-card p {
 
   margin-bottom: 10px;
@@ -1226,6 +1521,7 @@ header {
 
   font-size: 13px;
 }
+
 
 .credential-number {
 
@@ -1237,8 +1533,10 @@ header {
     var(--azul-principal);
 
   font-size: 13px;
+
   font-weight: 800;
 }
+
 
 .certification-card {
 
@@ -1254,6 +1552,7 @@ header {
   border: none;
 }
 
+
 .certification-card
 .credential-type,
 
@@ -1264,6 +1563,7 @@ header {
 
   color: white;
 }
+
 
 .certification-card p {
 
@@ -1287,11 +1587,13 @@ header {
     );
 }
 
+
 .locations
 .section-heading h2 {
 
   color: white;
 }
+
 
 .locations
 .section-heading p {
@@ -1299,15 +1601,18 @@ header {
   color: #d7e7f3;
 }
 
+
 .locations
 .eyebrow {
 
   color: #a9d2ec;
 }
 
+
 .locations-grid {
 
   max-width: 1000px;
+
   margin: auto;
 
   display: grid;
@@ -1317,6 +1622,7 @@ header {
 
   gap: 20px;
 }
+
 
 .location-card {
 
@@ -1331,6 +1637,7 @@ header {
   border-radius: 20px;
 }
 
+
 .location-label {
 
   display: block;
@@ -1340,10 +1647,12 @@ header {
   color: #a9d2ec;
 
   font-size: 10px;
+
   font-weight: 800;
 
   letter-spacing: 2px;
 }
+
 
 .location-card h3 {
 
@@ -1352,12 +1661,14 @@ header {
   font-size: 23px;
 }
 
+
 .location-card p {
 
   color: #d5e3ec;
 
   font-size: 14px;
 }
+
 
 .location-description {
 
@@ -1366,16 +1677,28 @@ header {
   line-height: 1.7;
 }
 
+
+.location-actions {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+
 .location-button {
 
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
 
   min-height: 46px;
-
-  margin-top: 20px;
 
   padding: 0 20px;
 
@@ -1387,10 +1710,12 @@ header {
   border-radius: 10px;
 
   font-size: 13px;
+
   font-weight: 700;
 
   transition: .2s ease;
 }
+
 
 .location-button:hover {
 
@@ -1428,6 +1753,7 @@ header {
     0 18px 45px rgba(0,0,0,.14);
 }
 
+
 .map-info {
 
   padding: 35px;
@@ -1435,12 +1761,14 @@ header {
   display: flex;
 
   flex-direction: column;
+
   justify-content: center;
 
   color: #1d2c39;
 
   background: white;
 }
+
 
 .map-info
 .location-label {
@@ -1449,15 +1777,18 @@ header {
     var(--azul-medio);
 }
 
+
 .map-info h3 {
 
-  margin: 8px 0 12px;
+  margin:
+    8px 0 12px;
 
   color:
     var(--azul-oscuro);
 
   font-size: 24px;
 }
+
 
 .map-info p {
 
@@ -1467,10 +1798,13 @@ header {
   font-size: 14px;
 }
 
+
 .map-info
 .location-button {
 
   align-self: flex-start;
+
+  margin-top: 20px;
 
   background:
     var(--azul-principal);
@@ -1478,16 +1812,19 @@ header {
   color: white;
 }
 
+
 .map-container {
 
   min-height: 380px;
 }
+
 
 .map-container iframe {
 
   display: block;
 
   width: 100%;
+
   height: 100%;
 
   min-height: 380px;
@@ -1497,7 +1834,7 @@ header {
 
 
 /* =========================================
-   RESEÑAS DE GOOGLE
+   RESEÑAS GOOGLE
 ========================================= */
 
 .google-reviews {
@@ -1507,6 +1844,7 @@ header {
   background:
     var(--gris-fondo);
 }
+
 
 .reviews-box {
 
@@ -1533,6 +1871,7 @@ header {
     0 15px 40px rgba(13,71,114,.07);
 }
 
+
 .reviews-box::before {
 
   content: "";
@@ -1540,9 +1879,11 @@ header {
   position: absolute;
 
   width: 180px;
+
   height: 180px;
 
   top: -110px;
+
   right: -70px;
 
   background:
@@ -1551,18 +1892,6 @@ header {
   border-radius: 50%;
 }
 
-.review-stars {
-
-  display: block;
-
-  margin-bottom: 12px;
-
-  color: #d6a830;
-
-  font-size: 22px;
-
-  letter-spacing: 4px;
-}
 
 .reviews-box h2 {
 
@@ -1574,6 +1903,7 @@ header {
   font-size:
     clamp(1.8rem,4vw,2.5rem);
 }
+
 
 .reviews-box p {
 
@@ -1588,6 +1918,7 @@ header {
   font-size: 15px;
 }
 
+
 .button-review {
 
   background:
@@ -1595,6 +1926,7 @@ header {
 
   color: white;
 }
+
 
 .button-review:hover {
 
@@ -1611,8 +1943,10 @@ header {
 ========================================= */
 
 .contact {
+
   background: white;
 }
+
 
 .contact-main {
 
@@ -1627,6 +1961,7 @@ header {
 
   gap: 25px;
 }
+
 
 .contact-info {
 
@@ -1647,6 +1982,7 @@ header {
     0 18px 45px rgba(7,27,46,.13);
 }
 
+
 .contact-logo {
 
   width: 82px;
@@ -1656,13 +1992,16 @@ header {
   border-radius: 14px;
 }
 
+
 .contact-info h3 {
 
   margin-bottom: 5px;
 
   font-size: 24px;
+
   line-height: 1.25;
 }
+
 
 .contact-specialty {
 
@@ -1673,11 +2012,14 @@ header {
   color: #bfe2f6;
 
   font-size: 14px;
+
   font-weight: 700;
 
   letter-spacing: 1px;
+
   text-transform: uppercase;
 }
+
 
 .contact-info p {
 
@@ -1690,9 +2032,11 @@ header {
   font-size: 14px;
 }
 
+
 .contact-actions {
 
   display: flex;
+
   flex-wrap: wrap;
 
   gap: 12px;
@@ -1700,11 +2044,13 @@ header {
   margin-bottom: 20px;
 }
 
+
 .contact-button {
 
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
 
   min-height: 50px;
@@ -1714,16 +2060,19 @@ header {
   border-radius: 10px;
 
   font-size: 14px;
+
   font-weight: 700;
 
   transition: .2s ease;
 }
+
 
 .contact-button:hover {
 
   transform:
     translateY(-2px);
 }
+
 
 .contact-button.whatsapp {
 
@@ -1732,6 +2081,7 @@ header {
   color:
     var(--azul-principal);
 }
+
 
 .contact-button.phone {
 
@@ -1744,6 +2094,7 @@ header {
     1px solid rgba(255,255,255,.25);
 }
 
+
 .phone-number {
 
   display: inline-block;
@@ -1751,8 +2102,10 @@ header {
   color: #cce6f5;
 
   font-size: 15px;
+
   font-weight: 600;
 }
+
 
 .contact-locations {
 
@@ -1763,6 +2116,7 @@ header {
   gap: 18px;
 }
 
+
 .contact-location-card {
 
   min-height: 190px;
@@ -1770,6 +2124,7 @@ header {
   display: flex;
 
   flex-direction: column;
+
   justify-content: center;
 
   padding: 30px;
@@ -1782,12 +2137,14 @@ header {
   border-radius: 21px;
 }
 
+
 .contact-location-card
 .location-label {
 
   color:
     var(--azul-medio);
 }
+
 
 .contact-location-card h3 {
 
@@ -1799,6 +2156,7 @@ header {
   font-size: 23px;
 }
 
+
 .contact-location-card p {
 
   margin-bottom: 10px;
@@ -1807,6 +2165,7 @@ header {
     var(--gris-texto);
 }
 
+
 .location-note {
 
   color:
@@ -1814,6 +2173,7 @@ header {
 
   font-size: 12px;
 }
+
 
 .contact-bottom {
 
@@ -1824,6 +2184,7 @@ header {
 
   text-align: center;
 }
+
 
 .contact-bottom p {
 
@@ -1843,16 +2204,19 @@ header {
   position: fixed;
 
   right: 22px;
+
   bottom: 22px;
 
   z-index: 2000;
 
   width: 60px;
+
   height: 60px;
 
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   background: #25d366;
@@ -1862,6 +2226,7 @@ header {
   border-radius: 50%;
 
   font-size: 12px;
+
   font-weight: 800;
 
   box-shadow:
@@ -1869,6 +2234,7 @@ header {
 
   transition: .2s ease;
 }
+
 
 .floating-whatsapp:hover {
 
@@ -1884,8 +2250,7 @@ header {
 
 footer {
 
-  padding:
-    32px 15px;
+  padding: 32px 15px;
 
   text-align: center;
 
@@ -1895,6 +2260,7 @@ footer {
 
   font-size: 12px;
 }
+
 
 footer strong {
 
@@ -1910,35 +2276,48 @@ footer strong {
 
 @media (max-width: 950px) {
 
+
   .hero-grid {
+
     grid-template-columns: 1fr;
   }
 
+
   .hero-text {
+
     text-align: center;
   }
+
 
   .hero-description {
 
     margin-left: auto;
+
     margin-right: auto;
   }
 
+
   .hero-buttons {
+
     justify-content: center;
   }
+
 
   .hero-features {
 
     max-width: 650px;
 
     margin-left: auto;
+
     margin-right: auto;
   }
 
+
   .hero-photo-card {
+
     max-width: 400px;
   }
+
 
   .services-grid,
   .credentials-grid {
@@ -1947,15 +2326,19 @@ footer strong {
       repeat(2,1fr);
   }
 
+
   .areas-grid {
 
     grid-template-columns:
       repeat(2,1fr);
   }
 
+
   .profile-grid {
+
     grid-template-columns: 1fr;
   }
+
 
   .profile-photo {
 
@@ -1973,35 +2356,50 @@ footer strong {
 
 @media (max-width: 760px) {
 
+
   header {
+
     position: relative;
   }
 
+
   .navbar {
+
     padding: 13px 0;
   }
 
+
   .menu {
+
     display: none;
   }
+
 
   .brand img {
 
     width: 45px;
+
     height: 45px;
   }
 
+
   .brand-info strong {
+
     font-size: 12px;
   }
 
+
   .brand-info span {
+
     font-size: 9px;
   }
 
+
   .hero {
+
     min-height: auto;
   }
+
 
   .hero-grid {
 
@@ -2010,17 +2408,24 @@ footer strong {
     gap: 35px;
   }
 
+
   .hero h1 {
+
     font-size: 2.45rem;
   }
 
+
   .hero-features {
+
     grid-template-columns: 1fr;
   }
 
+
   section {
+
     padding: 65px 0;
   }
+
 
   .services-grid,
   .studies-grid,
@@ -2031,17 +2436,24 @@ footer strong {
     grid-template-columns: 1fr;
   }
 
+
   .medicine-box {
+
     padding: 25px;
   }
 
+
   .map-section {
+
     grid-template-columns: 1fr;
   }
 
+
   .map-info {
+
     padding: 28px 24px;
   }
+
 
   .map-container,
   .map-container iframe {
@@ -2049,15 +2461,19 @@ footer strong {
     min-height: 320px;
   }
 
+
   .reviews-box {
 
     padding:
       40px 24px;
   }
 
+
   .contact-main {
+
     grid-template-columns: 1fr;
   }
+
 
   .contact-info {
 
@@ -2065,20 +2481,40 @@ footer strong {
       30px 24px;
   }
 
+
   .contact-actions {
+
     flex-direction: column;
   }
 
+
   .contact-button {
+
     width: 100%;
   }
+
+
+  .location-actions {
+
+    flex-direction: column;
+  }
+
+
+  .location-actions
+  .location-button {
+
+    width: 100%;
+  }
+
 
   .floating-whatsapp {
 
     right: 16px;
+
     bottom: 16px;
 
     width: 56px;
+
     height: 56px;
   }
 
@@ -2091,23 +2527,31 @@ footer strong {
 
 @media (max-width: 480px) {
 
+
   .areas-grid {
 
     grid-template-columns:
       1fr 1fr;
   }
 
+
   .hero h1 {
+
     font-size: 2.15rem;
   }
 
+
   .hero h2 {
+
     font-size: 1.2rem;
   }
 
+
   .hero-description {
+
     font-size: 15px;
   }
+
 
   .when-card {
 
@@ -2115,9 +2559,11 @@ footer strong {
       65px 22px 24px;
   }
 
+
   .when-icon {
 
     left: 22px;
+
     top: 20px;
   }
 
@@ -2139,15 +2585,17 @@ footer strong {
 
   <div class="container navbar">
 
+
     <a
       href="#inicio"
       class="brand"
     >
 
       <img
-        src="images/logo-jmrs.png"
+        src="/images/logo-jmrs.png"
         alt="Logotipo Dr. José Miguel Rocha Sánchez"
       >
+
 
       <div class="brand-info">
 
@@ -2196,6 +2644,7 @@ footer strong {
 
     </nav>
 
+
   </div>
 
 </header>
@@ -2215,19 +2664,24 @@ footer strong {
 
   <div class="container hero-grid">
 
+
     <div class="hero-text">
+
 
       <span class="hero-tag">
         MÉDICO INTERNISTA
       </span>
 
+
       <h1>
         Dr. José Miguel Rocha Sánchez
       </h1>
 
+
       <h2>
         Evaluación integral y precisa
       </h2>
+
 
       <p class="hero-description">
 
@@ -2240,6 +2694,7 @@ footer strong {
 
       <div class="hero-buttons">
 
+
         <a
           href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20consulta%20de%20Medicina%20Interna."
           target="_blank"
@@ -2249,6 +2704,7 @@ footer strong {
           Agenda tu consulta
         </a>
 
+
         <a
           href="#servicios"
           class="button button-outline"
@@ -2256,10 +2712,12 @@ footer strong {
           Conoce los servicios
         </a>
 
+
       </div>
 
 
       <div class="hero-features">
+
 
         <div class="hero-feature">
 
@@ -2299,7 +2757,9 @@ footer strong {
 
         </div>
 
+
       </div>
+
 
     </div>
 
@@ -2309,13 +2769,14 @@ footer strong {
       <div class="hero-photo-card">
 
         <img
-          src="images/dr-miguel-rocha.png"
+          src="/images/dr-miguel-rocha.png"
           alt="Dr. José Miguel Rocha Sánchez, Médico Internista en Puebla y Tlaxcala"
         >
 
       </div>
 
     </div>
+
 
   </div>
 
@@ -2329,6 +2790,7 @@ footer strong {
 <section class="internal-medicine">
 
   <div class="container">
+
 
     <div class="section-heading">
 
@@ -2374,6 +2836,7 @@ footer strong {
 
     </div>
 
+
   </div>
 
 </section>
@@ -2386,6 +2849,7 @@ footer strong {
 <section id="servicios">
 
   <div class="container">
+
 
     <div class="section-heading">
 
@@ -2407,36 +2871,35 @@ footer strong {
 
     <div class="services-grid">
 
-     <article class="service-card">
 
-  <span class="service-number">
-    01
-  </span>
+      <!-- DIABETES -->
 
-  <h3>
-    Diabetes
-  </h3>
+      <article class="service-card">
 
-  <p>
-    Diagnóstico, control metabólico,
-    tratamiento y prevención de complicaciones.
-  </p>
+        <span class="service-number">
+          01
+        </span>
 
-  <a
-    href="/diabetes-puebla/"
-    style="
-      display:inline-block;
-      margin-top:15px;
-      color:#0d4772;
-      font-size:13px;
-      font-weight:800;
-    "
-  >
-    Diabetes en Puebla →
-  </a>
+        <h3>
+          Diabetes
+        </h3>
 
-</article>
+        <p>
+          Diagnóstico, control metabólico,
+          tratamiento y prevención de complicaciones.
+        </p>
 
+        <a
+          href="/diabetes-puebla/"
+          class="service-link"
+        >
+          Diabetes en Puebla →
+        </a>
+
+      </article>
+
+
+      <!-- HIPERTENSIÓN -->
 
       <article class="service-card">
 
@@ -2453,8 +2916,17 @@ footer strong {
           tratamiento y seguimiento.
         </p>
 
+        <a
+          href="/hipertension-puebla/"
+          class="service-link"
+        >
+          Hipertensión arterial en Puebla →
+        </a>
+
       </article>
 
+
+      <!-- LÍPIDOS -->
 
       <article class="service-card">
 
@@ -2474,6 +2946,8 @@ footer strong {
       </article>
 
 
+      <!-- PREOPERATORIA -->
+
       <article class="service-card">
 
         <span class="service-number">
@@ -2492,36 +2966,27 @@ footer strong {
       </article>
 
 
+      <!-- SÍNTOMAS -->
+
       <article class="service-card">
 
-  <span class="service-number">
-    02
-  </span>
+        <span class="service-number">
+          05
+        </span>
 
-  <h3>
-    Hipertensión arterial
-  </h3>
+        <h3>
+          Evaluación integral de síntomas
+        </h3>
 
-  <p>
-    Evaluación de la presión arterial,
-    tratamiento y seguimiento.
-  </p>
+        <p>
+          Estudio de síntomas persistentes
+          o cuya causa aún no ha sido identificada.
+        </p>
 
-  <a
-    href="/hipertension-puebla/"
-    style="
-      display:inline-block;
-      margin-top:15px;
-      color:#0d4772;
-      font-size:13px;
-      font-weight:800;
-    "
-  >
-    Hipertensión arterial en Puebla →
-  </a>
+      </article>
 
-</article>
 
+      <!-- MÚLTIPLES ENFERMEDADES -->
 
       <article class="service-card">
 
@@ -2540,7 +3005,9 @@ footer strong {
 
       </article>
 
+
     </div>
+
 
   </div>
 
@@ -2554,6 +3021,7 @@ footer strong {
 <section class="studies">
 
   <div class="container">
+
 
     <div class="section-heading">
 
@@ -2575,6 +3043,7 @@ footer strong {
 
     <div class="studies-grid">
 
+
       <article class="study-card">
 
         <h3>
@@ -2588,6 +3057,13 @@ footer strong {
           y control de hipertensión arterial.
 
         </p>
+
+        <a
+          href="/hipertension-puebla/"
+          class="service-link"
+        >
+          Ver evaluación de hipertensión →
+        </a>
 
       </article>
 
@@ -2607,7 +3083,9 @@ footer strong {
 
       </article>
 
+
     </div>
+
 
   </div>
 
@@ -2615,12 +3093,13 @@ footer strong {
 
 
 <!-- =========================================
-     ÁREAS
+     ÁREAS DE ATENCIÓN
 ========================================== -->
 
 <section>
 
   <div class="container">
+
 
     <div class="section-heading">
 
@@ -2676,6 +3155,7 @@ footer strong {
 
     </div>
 
+
   </div>
 
 </section>
@@ -2691,6 +3171,7 @@ footer strong {
 >
 
   <div class="container">
+
 
     <div class="section-heading">
 
@@ -2714,6 +3195,7 @@ footer strong {
 
 
     <div class="when-grid">
+
 
       <article class="when-card">
 
@@ -2839,6 +3321,7 @@ footer strong {
 
       </article>
 
+
     </div>
 
 
@@ -2848,9 +3331,11 @@ footer strong {
 
         Si no sabes qué especialista necesitas,
         una valoración por Medicina Interna puede
-        ayudar a orientar el diagnóstico y los siguientes pasos.
+        ayudar a orientar el diagnóstico y
+        los siguientes pasos.
 
       </p>
+
 
       <a
         href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20valoraci%C3%B3n%20de%20Medicina%20Interna."
@@ -2862,7 +3347,9 @@ footer strong {
         Agendar una valoración
       </a>
 
+
     </div>
+
 
   </div>
 
@@ -2880,11 +3367,13 @@ footer strong {
 
   <div class="container profile-grid">
 
+
     <div class="profile-photo">
 
       <img
-        src="images/dr-miguel-rocha.png"
+        src="/images/dr-miguel-rocha.png"
         alt="Dr. José Miguel Rocha Sánchez, especialista en Medicina Interna"
+        loading="lazy"
       >
 
     </div>
@@ -2892,21 +3381,26 @@ footer strong {
 
     <div class="profile-content">
 
+
       <span class="eyebrow">
         Sobre mí
       </span>
+
 
       <h2>
         Dr. José Miguel Rocha Sánchez
       </h2>
 
+
       <span class="profile-specialty">
         Médico Internista
       </span>
 
+
       <span class="profile-certified">
         Certificado por el Consejo Mexicano de Medicina Interna
       </span>
+
 
       <p>
 
@@ -2914,6 +3408,7 @@ footer strong {
         en la evaluación integral del paciente adulto.
 
       </p>
+
 
       <p>
 
@@ -2928,6 +3423,7 @@ footer strong {
 
       </p>
 
+
       <p>
 
         La consulta busca integrar síntomas,
@@ -2937,15 +3433,18 @@ footer strong {
 
       </p>
 
+
       <p>
 
-        El objetivo es establecer diagnósticos precisos,
+        El objetivo es integrar los hallazgos clínicos,
         prevenir complicaciones y definir estrategias
         de tratamiento individualizadas.
 
       </p>
 
+
     </div>
+
 
   </div>
 
@@ -2962,6 +3461,7 @@ footer strong {
 >
 
   <div class="container">
+
 
     <div class="section-heading">
 
@@ -2984,6 +3484,7 @@ footer strong {
 
 
     <div class="credentials-grid">
+
 
       <article class="credential-card">
 
@@ -3047,7 +3548,9 @@ footer strong {
 
       </article>
 
+
     </div>
+
 
   </div>
 
@@ -3064,6 +3567,7 @@ footer strong {
 >
 
   <div class="container">
+
 
     <div class="section-heading">
 
@@ -3087,6 +3591,9 @@ footer strong {
 
     <div class="locations-grid">
 
+
+      <!-- PUEBLA -->
+
       <div class="location-card">
 
         <span class="location-label">
@@ -3109,6 +3616,7 @@ footer strong {
           C.P. 72570, Puebla, Puebla
         </p>
 
+
         <p class="location-description">
 
           Consulta presencial de Medicina Interna
@@ -3116,43 +3624,33 @@ footer strong {
 
         </p>
 
-        <a
-          href="https://maps.app.goo.gl/EGhUhLtQEeJP8uM38"
-          target="_blank"
-          rel="noopener"
-          class="location-button"
-        >
-          Cómo llegar
-        </a>
-        <a
-          href="https://maps.app.goo.gl/EGhUhLtQEeJP8uM38"
-          target="_blank"
-          rel="noopener"
-          class="location-button"
-        >
-          Cómo llegar
-        </a>
+
+        <div class="location-actions">
+
+          <a
+            href="https://maps.app.goo.gl/EGhUhLtQEeJP8uM38"
+            target="_blank"
+            rel="noopener"
+            class="location-button"
+          >
+            Cómo llegar
+          </a>
 
 
-        <a
-          href="/medico-internista-puebla/"
-          class="location-button"
-          style="margin-left:8px;"
-        >
-          Médico Internista en Puebla
-        </a>
+          <a
+            href="/medico-internista-puebla/"
+            class="location-button"
+          >
+            Médico Internista en Puebla
+          </a>
+
+        </div>
 
 
       </div>
 
 
-      <div class="location-card">
-
-        <span class="location-label">
-          ATENCIÓN PROGRAMADA
-        </span>
-      </div>
-
+      <!-- HUAMANTLA -->
 
       <div class="location-card">
 
@@ -3168,6 +3666,7 @@ footer strong {
           Huamantla, Tlaxcala
         </p>
 
+
         <p class="location-description">
 
           Consulta disponible en fechas programadas.
@@ -3176,21 +3675,33 @@ footer strong {
 
         </p>
 
-        <a
-          href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20la%20disponibilidad%20de%20consulta%20de%20Medicina%20Interna%20en%20Huamantla%2C%20Tlaxcala."
-          target="_blank"
-          rel="noopener"
-          class="location-button"
-        >
-          Consultar disponibilidad
-        </a>
+
+        <div class="location-actions">
+
+          <a
+            href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20la%20disponibilidad%20de%20consulta%20de%20Medicina%20Interna%20en%20Huamantla%2C%20Tlaxcala."
+            target="_blank"
+            rel="noopener"
+            class="location-button"
+          >
+            Consultar disponibilidad
+          </a>
+
+        </div>
+
 
       </div>
+
 
     </div>
 
 
+    <!-- =========================================
+         MAPA PUEBLA
+    ========================================== -->
+
     <div class="map-section">
+
 
       <div class="map-info">
 
@@ -3214,6 +3725,7 @@ footer strong {
           C.P. 72570, Puebla, Puebla
         </p>
 
+
         <a
           href="https://maps.app.goo.gl/EGhUhLtQEeJP8uM38"
           target="_blank"
@@ -3222,6 +3734,7 @@ footer strong {
         >
           Abrir en Google Maps
         </a>
+
 
       </div>
 
@@ -3238,7 +3751,9 @@ footer strong {
 
       </div>
 
+
     </div>
+
 
   </div>
 
@@ -3256,14 +3771,11 @@ footer strong {
 
   <div class="container">
 
+
     <div class="reviews-box">
 
-      <span class="review-stars">
-        ★★★★★
-      </span>
-
       <span class="eyebrow">
-        Tu opinión es importante
+        Opiniones en Google
       </span>
 
       <h2>
@@ -3279,6 +3791,7 @@ footer strong {
 
       </p>
 
+
       <a
         href="https://g.page/r/CYfzjienQRcjEAE/review"
         target="_blank"
@@ -3289,7 +3802,9 @@ footer strong {
         Dejar una reseña en Google
       </a>
 
+
     </div>
+
 
   </div>
 
@@ -3306,6 +3821,7 @@ footer strong {
 >
 
   <div class="container">
+
 
     <div class="section-heading">
 
@@ -3329,21 +3845,27 @@ footer strong {
 
     <div class="contact-main">
 
+
       <div class="contact-info">
 
+
         <img
-          src="images/logo-jmrs.png"
+          src="/images/logo-jmrs.png"
           alt="Logotipo Dr. José Miguel Rocha Sánchez"
           class="contact-logo"
+          loading="lazy"
         >
+
 
         <h3>
           Dr. José Miguel Rocha Sánchez
         </h3>
 
+
         <span class="contact-specialty">
           Medicina Interna
         </span>
+
 
         <p>
 
@@ -3356,6 +3878,7 @@ footer strong {
 
         <div class="contact-actions">
 
+
           <a
             href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20consulta%20de%20Medicina%20Interna."
             target="_blank"
@@ -3365,12 +3888,14 @@ footer strong {
             Agendar por WhatsApp
           </a>
 
+
           <a
             href="tel:+522471012260"
             class="contact-button phone"
           >
             Llamar
           </a>
+
 
         </div>
 
@@ -3382,10 +3907,12 @@ footer strong {
           +52 247 101 2260
         </a>
 
+
       </div>
 
 
       <div class="contact-locations">
+
 
         <div class="contact-location-card">
 
@@ -3428,7 +3955,9 @@ footer strong {
 
         </div>
 
+
       </div>
+
 
     </div>
 
@@ -3443,6 +3972,7 @@ footer strong {
       </p>
 
     </div>
+
 
   </div>
 
@@ -3466,14 +3996,17 @@ footer strong {
 
   </p>
 
+
   <p>
     Médico Internista
   </p>
+
 
   <p>
     Cédula profesional 12355482 ·
     Cédula de especialidad 15715376
   </p>
+
 
   <p>
 
@@ -3482,12 +4015,14 @@ footer strong {
 
   </p>
 
+
   <p style="margin-top:10px;">
 
     Puebla, Puebla ·
     Atención programada en Huamantla, Tlaxcala
 
   </p>
+
 
   <p style="margin-top:12px;">
 
