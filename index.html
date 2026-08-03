@@ -3,14 +3,59 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Dr. José Miguel Rocha Sánchez | Medicina Interna</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-  <meta name="description"
-        content="Consulta de Medicina Interna con el Dr. José Miguel Rocha Sánchez en Huamantla, Tlaxcala y Puebla, Puebla. Evaluación integral, diagnóstico y seguimiento de enfermedades del adulto.">
+  <title>
+    Dr. José Miguel Rocha Sánchez | Medicina Interna
+  </title>
+
+  <meta
+    name="description"
+    content="Consulta de Medicina Interna con el Dr. José Miguel Rocha Sánchez. Atención médica integral en Huamantla, Tlaxcala y Puebla, Puebla."
+  >
+
+  <!-- TIPOGRAFÍA -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
 
   <style>
+
+    /* =========================================
+       CONFIGURACIÓN GENERAL
+    ========================================= */
+
+    :root {
+
+      --azul-profundo: #071b2e;
+      --azul-oscuro: #0a2d4d;
+      --azul-principal: #0d4772;
+      --azul-medio: #176a9e;
+      --azul-claro: #dcecf7;
+
+      --blanco: #ffffff;
+
+      --gris-fondo: #f6f8fa;
+      --gris-texto: #536474;
+      --gris-suave: #7b8b99;
+
+      --borde: #dde5eb;
+
+      --sombra:
+        0 18px 50px rgba(7, 27, 46, 0.12);
+
+    }
+
 
     * {
       margin: 0;
@@ -18,768 +63,2134 @@
       box-sizing: border-box;
     }
 
+
     html {
       scroll-behavior: smooth;
     }
 
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #1d2733;
-      background: #ffffff;
-      line-height: 1.6;
-    }
 
-    /* =========================
-       MENÚ
-    ========================== */
+      font-family: "Montserrat", Arial, sans-serif;
 
-    header {
-      background: #ffffff;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid #e6e9ed;
-    }
+      color: #1d2c39;
 
-    nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 18px 25px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo-text {
-      font-size: 18px;
-      font-weight: 700;
-      color: #12365a;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 28px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #283848;
-      font-size: 15px;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      color: #0b6ca8;
-    }
-
-    /* =========================
-       PORTADA
-    ========================== */
-
-    .hero {
-      min-height: 82vh;
-      background:
-        linear-gradient(
-          90deg,
-          rgba(8, 38, 65, 0.97) 0%,
-          rgba(14, 62, 98, 0.92) 55%,
-          rgba(27, 91, 131, 0.87) 100%
-        );
-
-      display: flex;
-      align-items: center;
-    }
-
-    .hero-container {
-      max-width: 1200px;
-      margin: auto;
-      width: 100%;
-      padding: 80px 30px;
-    }
-
-    .hero-content {
-      max-width: 720px;
-    }
-
-    .hero-small {
-      font-size: 16px;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      color: #cfe9f8;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 {
-      color: white;
-      font-size: 54px;
-      line-height: 1.08;
-      margin-bottom: 14px;
-    }
-
-    .hero h2 {
-      color: #cbe9fa;
-      font-size: 30px;
-      margin-bottom: 25px;
-      font-weight: 500;
-    }
-
-    .hero p {
-      color: #e5f1f8;
-      font-size: 20px;
-      max-width: 630px;
-      margin-bottom: 35px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .button-primary,
-    .button-secondary {
-      display: inline-block;
-      padding: 14px 25px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: 0.25s;
-    }
-
-    .button-primary {
       background: white;
-      color: #11486e;
+
+      line-height: 1.65;
+
     }
 
-    .button-primary:hover {
-      transform: translateY(-2px);
+
+    img {
+
+      display: block;
+
+      max-width: 100%;
+
     }
 
-    .button-secondary {
-      border: 1px solid white;
-      color: white;
+
+    a {
+
+      text-decoration: none;
+
     }
 
-    .button-secondary:hover {
-      background: rgba(255,255,255,0.12);
-    }
-
-    /* =========================
-       SECCIONES
-    ========================== */
-
-    section {
-      padding: 90px 25px;
-    }
 
     .container {
-      max-width: 1100px;
+
+      width: min(1180px, 92%);
+
       margin: auto;
+
     }
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 55px;
+
+
+    /* =========================================
+       ENCABEZADO
+    ========================================= */
+
+    header {
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 1000;
+
+      background: rgba(255,255,255,0.96);
+
+      backdrop-filter: blur(12px);
+
+      border-bottom: 1px solid #e6edf2;
+
     }
 
-    .section-title h2 {
-      color: #143d5c;
-      font-size: 36px;
-      margin-bottom: 12px;
+
+    .navbar {
+
+      min-height: 78px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 30px;
+
     }
 
-    .section-title p {
-      color: #607080;
+
+
+    /* LOGOTIPO */
+
+    .brand {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+    }
+
+
+    .brand img {
+
+      width: 52px;
+
+      height: 52px;
+
+      object-fit: contain;
+
+      border-radius: 10px;
+
+    }
+
+
+    .brand-info strong {
+
+      display: block;
+
+      color: var(--azul-oscuro);
+
+      font-size: 14px;
+
+      line-height: 1.2;
+
+    }
+
+
+    .brand-info span {
+
+      display: block;
+
+      color: var(--gris-suave);
+
+      font-size: 11px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+
+      margin-top: 3px;
+
+    }
+
+
+
+    /* MENÚ */
+
+    .menu {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 25px;
+
+    }
+
+
+    .menu a {
+
+      font-size: 13px;
+
+      font-weight: 600;
+
+      color: #354e62;
+
+      transition: 0.2s;
+
+    }
+
+
+    .menu a:hover {
+
+      color: var(--azul-medio);
+
+    }
+
+
+
+    /* =========================================
+       PORTADA
+    ========================================= */
+
+    .hero {
+
+      min-height: 650px;
+
+      display: flex;
+
+      align-items: center;
+
+      color: white;
+
+      background:
+
+        radial-gradient(
+          circle at 15% 15%,
+          rgba(55, 147, 204, 0.22),
+          transparent 32%
+        ),
+
+        linear-gradient(
+          120deg,
+          #06192b 0%,
+          #092c4a 47%,
+          #0c4773 100%
+        );
+
+      overflow: hidden;
+
+    }
+
+
+
+    .hero-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1.08fr)
+        minmax(320px, 0.92fr);
+
+      align-items: center;
+
+      gap: 55px;
+
+      padding: 65px 0;
+
+    }
+
+
+
+    /* TEXTO */
+
+    .hero-tag {
+
+      display: inline-block;
+
+      padding: 8px 15px;
+
+      margin-bottom: 20px;
+
+      border: 1px solid rgba(255,255,255,0.2);
+
+      border-radius: 100px;
+
+      background: rgba(255,255,255,0.07);
+
+      color: #d9edf9;
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .hero h1 {
+
       max-width: 700px;
-      margin: auto;
+
+      color: white;
+
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+      line-height: 1.04;
+
+      font-weight: 800;
+
+      margin-bottom: 14px;
+
+    }
+
+
+    .hero h2 {
+
+      color: #cde8f8;
+
+      font-size: clamp(1.25rem, 2vw, 1.75rem);
+
+      font-weight: 500;
+
+      margin-bottom: 24px;
+
+    }
+
+
+    .hero-description {
+
+      max-width: 650px;
+
+      color: #e1edf5;
+
       font-size: 17px;
+
+      margin-bottom: 30px;
+
     }
 
-    /* =========================
-       MEDICINA INTERNA
-    ========================== */
 
-    .about {
-      background: #f7f9fb;
+
+    /* BOTONES */
+
+    .hero-buttons {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 14px;
+
+      margin-bottom: 34px;
+
     }
 
-    .about-text {
-      max-width: 850px;
-      margin: auto;
-      font-size: 18px;
+
+    .button {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-height: 50px;
+
+      padding: 0 24px;
+
+      border-radius: 10px;
+
+      font-weight: 700;
+
+      font-size: 14px;
+
+      transition: 0.2s ease;
+
+    }
+
+
+    .button-primary {
+
+      background: white;
+
+      color: var(--azul-principal);
+
+    }
+
+
+    .button-primary:hover {
+
+      transform: translateY(-2px);
+
+    }
+
+
+    .button-outline {
+
+      color: white;
+
+      border: 1px solid rgba(255,255,255,0.35);
+
+      background: rgba(255,255,255,0.04);
+
+    }
+
+
+    .button-outline:hover {
+
+      background: rgba(255,255,255,0.10);
+
+    }
+
+
+
+    /* DATOS RÁPIDOS */
+
+    .hero-features {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 12px;
+
+    }
+
+
+    .hero-feature {
+
+      padding: 15px;
+
+      background: rgba(255,255,255,0.06);
+
+      border: 1px solid rgba(255,255,255,0.10);
+
+      border-radius: 13px;
+
+    }
+
+
+    .hero-feature strong {
+
+      display: block;
+
+      color: white;
+
+      font-size: 13px;
+
+      margin-bottom: 3px;
+
+    }
+
+
+    .hero-feature span {
+
+      color: #bfd5e4;
+
+      font-size: 11px;
+
+    }
+
+
+
+    /* FOTO */
+
+    .hero-photo-wrapper {
+
+      position: relative;
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+    .hero-photo-card {
+
+      width: 100%;
+
+      max-width: 470px;
+
+      padding: 14px;
+
+      border-radius: 30px;
+
+      border: 1px solid rgba(255,255,255,0.13);
+
+      background: rgba(255,255,255,0.07);
+
+      box-shadow: var(--sombra);
+
+    }
+
+
+    .hero-photo-card img {
+
+      width: 100%;
+
+      aspect-ratio: 4 / 5;
+
+      object-fit: cover;
+
+      object-position: center top;
+
+      border-radius: 22px;
+
+    }
+
+
+
+    /* =========================================
+       SECCIONES GENERALES
+    ========================================= */
+
+    section {
+
+      padding: 90px 0;
+
+    }
+
+
+    .section-heading {
+
+      max-width: 760px;
+
+      margin: 0 auto 48px;
+
       text-align: center;
-      color: #465867;
+
     }
 
-    /* =========================
+
+    .section-heading .eyebrow {
+
+      display: block;
+
+      margin-bottom: 9px;
+
+      color: var(--azul-medio);
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+    }
+
+
+    .section-heading h2 {
+
+      color: var(--azul-oscuro);
+
+      font-size: clamp(1.9rem, 4vw, 2.65rem);
+
+      line-height: 1.2;
+
+      margin-bottom: 13px;
+
+    }
+
+
+    .section-heading p {
+
+      color: var(--gris-texto);
+
+      font-size: 16px;
+
+    }
+
+
+
+    /* =========================================
+       MEDICINA INTERNA
+    ========================================= */
+
+    .internal-medicine {
+
+      background: var(--gris-fondo);
+
+    }
+
+
+    .medicine-box {
+
+      max-width: 980px;
+
+      margin: auto;
+
+      padding: 38px;
+
+      background: white;
+
+      border: 1px solid var(--borde);
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 10px 30px rgba(13,71,114,0.05);
+
+    }
+
+
+    .medicine-box p {
+
+      color: var(--gris-texto);
+
+      font-size: 16px;
+
+      margin-bottom: 16px;
+
+    }
+
+
+    .medicine-box p:last-child {
+
+      margin-bottom: 0;
+
+    }
+
+
+
+    /* =========================================
        SERVICIOS
-    ========================== */
+    ========================================= */
 
     .services-grid {
+
       display: grid;
+
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+
+      gap: 22px;
+
     }
 
-    .card {
+
+    .service-card {
+
+      padding: 28px;
+
       background: white;
-      border: 1px solid #e4e9ed;
-      padding: 32px;
+
+      border: 1px solid var(--borde);
+
+      border-radius: 19px;
+
+      transition: 0.25s ease;
+
+    }
+
+
+    .service-card:hover {
+
+      transform: translateY(-5px);
+
+      box-shadow:
+        0 16px 35px rgba(13,71,114,0.09);
+
+    }
+
+
+    .service-number {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      width: 38px;
+
+      height: 38px;
+
+      margin-bottom: 18px;
+
       border-radius: 10px;
-      transition: 0.25s;
+
+      background: #e8f3f9;
+
+      color: var(--azul-principal);
+
+      font-size: 13px;
+
+      font-weight: 800;
+
     }
 
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.07);
-    }
 
-    .card h3 {
-      color: #154e75;
-      margin-bottom: 12px;
-      font-size: 20px;
-    }
+    .service-card h3 {
 
-    .card p {
-      color: #667581;
-      font-size: 15px;
-    }
+      color: var(--azul-principal);
 
-    /* =========================
-       SISTEMAS
-    ========================== */
-
-    .systems {
-      background: #f7f9fb;
-    }
-
-    .systems-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-
-    .system-item {
-      background: white;
-      padding: 25px 15px;
-      text-align: center;
-      border-radius: 8px;
-      font-weight: 700;
-      color: #174c70;
-      border: 1px solid #e5e9ed;
-    }
-
-    /* =========================
-       SOBRE MI
-    ========================== */
-
-    .profile {
-      max-width: 850px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .profile h3 {
-      color: #143d5c;
-      font-size: 27px;
-      margin-bottom: 8px;
-    }
-
-    .profile .specialty {
-      color: #1475a6;
-      font-weight: 700;
-      margin-bottom: 22px;
-    }
-
-    .profile p {
       font-size: 17px;
-      color: #586977;
-      margin-bottom: 15px;
+
+      margin-bottom: 9px;
+
     }
 
-    /* =========================
+
+    .service-card p {
+
+      color: var(--gris-texto);
+
+      font-size: 14px;
+
+    }
+
+
+
+    /* =========================================
+       ESTUDIOS
+    ========================================= */
+
+    .studies {
+
+      background: var(--gris-fondo);
+
+    }
+
+
+    .studies-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 25px;
+
+      max-width: 900px;
+
+      margin: auto;
+
+    }
+
+
+    .study-card {
+
+      padding: 32px;
+
+      background: white;
+
+      border-radius: 20px;
+
+      border: 1px solid var(--borde);
+
+    }
+
+
+    .study-card h3 {
+
+      color: var(--azul-principal);
+
+      margin-bottom: 9px;
+
+      font-size: 19px;
+
+    }
+
+
+    .study-card p {
+
+      color: var(--gris-texto);
+
+      font-size: 14px;
+
+    }
+
+
+
+    /* =========================================
+       ÁREAS DE ATENCIÓN
+    ========================================= */
+
+    .areas-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 15px;
+
+    }
+
+
+    .area {
+
+      min-height: 84px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 16px;
+
+      color: var(--azul-principal);
+
+      background: white;
+
+      border: 1px solid var(--borde);
+
+      border-radius: 15px;
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+    }
+
+
+
+    /* =========================================
+       SOBRE MÍ
+    ========================================= */
+
+    .about-me {
+
+      background: var(--gris-fondo);
+
+    }
+
+
+    .profile-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        minmax(280px, 0.8fr)
+        minmax(0, 1.2fr);
+
+      align-items: center;
+
+      gap: 50px;
+
+    }
+
+
+    .profile-photo {
+
+      padding: 13px;
+
+      border: 1px solid var(--borde);
+
+      border-radius: 25px;
+
+      background: white;
+
+      box-shadow:
+        0 15px 40px rgba(7,27,46,0.08);
+
+    }
+
+
+    .profile-photo img {
+
+      width: 100%;
+
+      border-radius: 18px;
+
+    }
+
+
+    .profile-content h2 {
+
+      color: var(--azul-oscuro);
+
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+
+      margin-bottom: 7px;
+
+    }
+
+
+    .profile-specialty {
+
+      display: block;
+
+      color: var(--azul-medio);
+
+      font-size: 15px;
+
+      font-weight: 700;
+
+      margin-bottom: 22px;
+
+    }
+
+
+    .profile-content p {
+
+      color: var(--gris-texto);
+
+      font-size: 15px;
+
+      margin-bottom: 14px;
+
+    }
+
+
+
+    /* =========================================
        UBICACIONES
-    ========================== */
+    ========================================= */
 
     .locations {
-      background: #123c5b;
+
       color: white;
+
+      background:
+
+        linear-gradient(
+          120deg,
+          #06192b,
+          #0b3d64
+        );
+
     }
 
-    .locations .section-title h2 {
+
+    .locations .section-heading h2 {
+
       color: white;
+
     }
 
-    .locations .section-title p {
-      color: #d5e6f1;
+
+    .locations .section-heading p {
+
+      color: #d7e7f3;
+
     }
 
-    .location-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-      max-width: 800px;
+
+    .locations .eyebrow {
+
+      color: #a9d2ec;
+
+    }
+
+
+    .locations-grid {
+
+      max-width: 850px;
+
       margin: auto;
+
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 20px;
+
     }
+
 
     .location-card {
-      padding: 35px;
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 10px;
+
+      padding: 34px;
+
       text-align: center;
+
+      border: 1px solid rgba(255,255,255,0.15);
+
+      border-radius: 20px;
+
+      background: rgba(255,255,255,0.06);
+
     }
+
 
     .location-card h3 {
-      margin-bottom: 8px;
-      font-size: 22px;
+
+      font-size: 21px;
+
+      margin-bottom: 3px;
+
     }
 
-    /* =========================
+
+    .location-card p {
+
+      color: #cbdce8;
+
+      font-size: 14px;
+
+    }
+
+
+
+    /* =========================================
        CONTACTO
-    ========================== */
+    ========================================= */
 
     .contact {
+
+      background: white;
+
+    }
+
+
+    .contact-box {
+
+      max-width: 900px;
+
+      margin: auto;
+
+      padding: 48px 30px;
+
       text-align: center;
+
+      border: 1px solid var(--borde);
+
+      border-radius: 24px;
+
+      box-shadow:
+        0 15px 45px rgba(13,71,114,0.07);
+
     }
 
-    .contact h2 {
-      color: #143d5c;
-      font-size: 37px;
-      margin-bottom: 15px;
+
+    .contact-box img {
+
+      width: 90px;
+
+      margin: 0 auto 20px;
+
+      border-radius: 14px;
+
     }
 
-    .contact p {
-      color: #62717d;
-      font-size: 18px;
-      margin-bottom: 30px;
+
+    .contact-box h2 {
+
+      color: var(--azul-oscuro);
+
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+
+      margin-bottom: 12px;
+
     }
 
-    .whatsapp-button {
-      background: #1475a6;
-      color: white;
-      padding: 16px 32px;
-      border-radius: 7px;
-      display: inline-block;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 17px;
+
+    .contact-box p {
+
+      max-width: 650px;
+
+      margin: 0 auto 25px;
+
+      color: var(--gris-texto);
+
     }
 
-    /* =========================
-       FOOTER
-    ========================== */
+
+
+    /* =========================================
+       PIE DE PÁGINA
+    ========================================= */
 
     footer {
-      background: #0c273b;
-      color: #bbc9d2;
+
+      padding: 32px 15px;
+
       text-align: center;
-      padding: 35px 20px;
-      font-size: 14px;
+
+      color: #b9c7d1;
+
+      background: #051522;
+
+      font-size: 12px;
+
     }
+
 
     footer strong {
+
       color: white;
+
+      font-size: 13px;
+
     }
 
-    /* =========================
+
+
+    /* =========================================
        CELULAR
-    ========================== */
+    ========================================= */
 
-    @media (max-width: 800px) {
+    @media (max-width: 950px) {
 
-      nav ul {
-        display: none;
+      .hero-grid {
+
+        grid-template-columns: 1fr;
+
       }
 
-      .hero {
-        min-height: 75vh;
+
+      .hero-text {
+
+        text-align: center;
+
       }
 
-      .hero h1 {
-        font-size: 40px;
+
+      .hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
       }
 
-      .hero h2 {
-        font-size: 25px;
+
+      .hero-buttons {
+
+        justify-content: center;
+
       }
 
-      .hero p {
-        font-size: 18px;
+
+      .hero-features {
+
+        max-width: 650px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
       }
+
+
+      .hero-photo-card {
+
+        max-width: 400px;
+
+      }
+
 
       .services-grid {
-        grid-template-columns: 1fr;
-      }
 
-      .systems-grid {
         grid-template-columns: repeat(2, 1fr);
+
       }
 
-      .location-grid {
+
+      .areas-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+      }
+
+
+      .profile-grid {
+
         grid-template-columns: 1fr;
+
       }
 
-      section {
-        padding: 70px 20px;
+
+      .profile-photo {
+
+        max-width: 430px;
+
+        margin: auto;
+
       }
 
     }
 
+
+
+    @media (max-width: 760px) {
+
+      header {
+
+        position: relative;
+
+      }
+
+
+      .navbar {
+
+        padding: 13px 0;
+
+      }
+
+
+      .menu {
+
+        display: none;
+
+      }
+
+
+      .brand img {
+
+        width: 45px;
+
+        height: 45px;
+
+      }
+
+
+      .brand-info strong {
+
+        font-size: 12px;
+
+      }
+
+
+      .brand-info span {
+
+        font-size: 9px;
+
+      }
+
+
+      .hero {
+
+        min-height: auto;
+
+      }
+
+
+      .hero-grid {
+
+        padding: 48px 0;
+
+        gap: 35px;
+
+      }
+
+
+      .hero h1 {
+
+        font-size: 2.45rem;
+
+      }
+
+
+      .hero-features {
+
+        grid-template-columns: 1fr;
+
+      }
+
+
+      section {
+
+        padding: 65px 0;
+
+      }
+
+
+      .services-grid,
+
+      .studies-grid,
+      .locations-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+
+      .medicine-box {
+
+        padding: 25px;
+
+      }
+
+
+      .contact-box {
+
+        padding: 35px 22px;
+
+      }
+
+    }
+
+
+
+    @media (max-width: 480px) {
+
+      .areas-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+
+      .hero h1 {
+
+        font-size: 2.15rem;
+
+      }
+
+
+      .hero h2 {
+
+        font-size: 1.2rem;
+
+      }
+
+
+      .hero-description {
+
+        font-size: 15px;
+
+      }
+
+    }
+
+
   </style>
+
 </head>
+
+
 
 <body>
 
 
-<header>
+  <!-- =========================================
+       ENCABEZADO
+  ========================================== -->
 
-  <nav>
+  <header>
 
-    <div class="logo-text">
-      Dr. José Miguel Rocha Sánchez
-    </div>
-
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#medicina-interna">Medicina Interna</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#ubicaciones">Ubicaciones</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-
-  </nav>
-
-</header>
+    <div class="container navbar">
 
 
-<!-- PORTADA -->
+      <a href="#inicio"
+         class="brand">
 
-<section class="hero" id="inicio">
 
-  <div class="hero-container">
+        <img
+          src="images/logo-jmrs.png"
+          alt="Logotipo Dr. José Miguel Rocha Sánchez"
+        >
 
-    <div class="hero-content">
 
-      <div class="hero-small">
-        Medicina Interna
-      </div>
+        <div class="brand-info">
 
-      <h1>
-        Dr. José Miguel Rocha Sánchez
-      </h1>
+          <strong>
+            Dr. José Miguel Rocha Sánchez
+          </strong>
 
-      <h2>
-        Médico Internista
-      </h2>
+          <span>
+            Medicina Interna
+          </span>
 
-      <p>
-        Evaluación integral y precisa para el diagnóstico,
-        tratamiento y seguimiento de enfermedades del adulto.
-      </p>
+        </div>
 
-      <div class="buttons">
+      </a>
 
-        <a href="#contacto" class="button-primary">
-          Agenda tu consulta
+
+
+      <nav class="menu">
+
+        <a href="#inicio">
+          Inicio
         </a>
 
-        <a href="#servicios" class="button-secondary">
-          Conoce los servicios
+        <a href="#servicios">
+          Servicios
         </a>
 
-      </div>
+        <a href="#sobre-mi">
+          Sobre mí
+        </a>
+
+        <a href="#ubicaciones">
+          Ubicaciones
+        </a>
+
+        <a href="#contacto">
+          Contacto
+        </a>
+
+      </nav>
+
 
     </div>
 
-  </div>
+  </header>
 
-</section>
 
 
-<!-- MEDICINA INTERNA -->
+  <main>
 
-<section class="about" id="medicina-interna">
 
-  <div class="container">
+    <!-- =========================================
+         PORTADA
+    ========================================== -->
 
-    <div class="section-title">
+    <section
+      class="hero"
+      id="inicio"
+    >
 
-      <h2>Medicina Interna</h2>
 
-      <p>
-        Una visión completa de la salud del paciente adulto.
-      </p>
+      <div class="container hero-grid">
 
-    </div>
 
-    <div class="about-text">
+        <div class="hero-text">
 
-      <p>
-        La Medicina Interna se especializa en la prevención,
-        diagnóstico y tratamiento integral de enfermedades en adultos,
-        especialmente cuando existen múltiples padecimientos,
-        síntomas complejos o es necesario analizar el organismo
-        como un conjunto y no como problemas aislados.
-      </p>
 
-    </div>
+          <span class="hero-tag">
+            MEDICINA INTERNA
+          </span>
 
-  </div>
 
-</section>
+          <h1>
+            Dr. José Miguel
+            Rocha Sánchez
+          </h1>
 
 
-<!-- SERVICIOS -->
+          <h2>
+            Evaluación integral y precisa
+          </h2>
 
-<section id="servicios">
 
-  <div class="container">
+          <p class="hero-description">
 
-    <div class="section-title">
+            Atención médica especializada para la
+            prevención, diagnóstico, tratamiento y
+            seguimiento de enfermedades del adulto.
 
-      <h2>Servicios</h2>
+          </p>
 
-      <p>
-        Atención médica enfocada en diagnóstico integral,
-        prevención y seguimiento.
-      </p>
 
-    </div>
 
+          <div class="hero-buttons">
 
-    <div class="services-grid">
 
-      <div class="card">
-        <h3>Diabetes</h3>
-        <p>
-          Diagnóstico, control metabólico y prevención
-          de complicaciones.
-        </p>
-      </div>
+            <a
+              href="#contacto"
+              class="button button-primary"
+            >
+              Agenda tu consulta
+            </a>
 
-      <div class="card">
-        <h3>Hipertensión arterial</h3>
-        <p>
-          Evaluación integral de la presión arterial,
-          tratamiento y seguimiento.
-        </p>
-      </div>
 
-      <div class="card">
-        <h3>Colesterol y triglicéridos</h3>
-        <p>
-          Evaluación del riesgo cardiovascular
-          y tratamiento de dislipidemias.
-        </p>
-      </div>
+            <a
+              href="#servicios"
+              class="button button-outline"
+            >
+              Conoce los servicios
+            </a>
 
-      <div class="card">
-        <h3>Valoración preoperatoria</h3>
-        <p>
-          Evaluación médica antes de procedimientos
-          quirúrgicos.
-        </p>
-      </div>
 
-      <div class="card">
-        <h3>Evaluación de síntomas</h3>
-        <p>
-          Estudio integral de síntomas persistentes
-          o de causa no determinada.
-        </p>
-      </div>
+          </div>
 
-      <div class="card">
-        <h3>Seguimiento integral</h3>
-        <p>
-          Atención de pacientes con múltiples enfermedades
-          o tratamientos simultáneos.
-        </p>
-      </div>
 
-    </div>
 
-  </div>
+          <div class="hero-features">
 
-</section>
 
+            <div class="hero-feature">
 
-<!-- SISTEMAS -->
+              <strong>
+                Atención integral
+              </strong>
 
-<section class="systems">
+              <span>
+                Evaluación completa del paciente adulto.
+              </span>
 
-  <div class="container">
+            </div>
 
-    <div class="section-title">
 
-      <h2>Atención integral</h2>
+            <div class="hero-feature">
 
-      <p>
-        Evaluación de enfermedades que afectan diferentes
-        órganos y sistemas.
-      </p>
+              <strong>
+                Diagnóstico preciso
+              </strong>
 
-    </div>
+              <span>
+                Síntomas, antecedentes y estudios integrados.
+              </span>
 
+            </div>
 
-    <div class="systems-grid">
 
-      <div class="system-item">Cerebro</div>
-      <div class="system-item">Tiroides</div>
-      <div class="system-item">Pulmones</div>
-      <div class="system-item">Corazón</div>
+            <div class="hero-feature">
 
-      <div class="system-item">Hígado</div>
-      <div class="system-item">Intestino</div>
-      <div class="system-item">Riñones</div>
-      <div class="system-item">Metabolismo</div>
+              <strong>
+                Dos ubicaciones
+              </strong>
 
-    </div>
+              <span>
+                Huamantla y Puebla.
+              </span>
 
-  </div>
+            </div>
 
-</section>
 
+          </div>
 
-<!-- SOBRE MI -->
 
-<section id="sobre-mi">
+        </div>
 
-  <div class="container">
 
-    <div class="section-title">
 
-      <h2>Sobre mí</h2>
+        <div class="hero-photo-wrapper">
 
-    </div>
 
-    <div class="profile">
+          <div class="hero-photo-card">
 
-      <h3>
-        Dr. José Miguel Rocha Sánchez
-      </h3>
 
-      <div class="specialty">
-        Medicina Interna
-      </div>
+            <img
+              src="images/dr-miguel-rocha.png"
+              alt="Dr. José Miguel Rocha Sánchez, Médico Internista"
+            >
 
-      <p>
-        Médico Internista dedicado a la evaluación integral
-        del paciente adulto.
-      </p>
 
-      <p>
-        Mi objetivo es identificar no solamente enfermedades
-        individuales, sino analizar cómo interactúan los diferentes
-        problemas de salud, tratamientos y factores de riesgo de cada
-        paciente.
-      </p>
+          </div>
 
-    </div>
 
-  </div>
+        </div>
 
-</section>
-
-
-<!-- UBICACIONES -->
-
-<section class="locations" id="ubicaciones">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>Consulta</h2>
-
-      <p>
-        Atención presencial en:
-      </p>
-
-    </div>
-
-
-    <div class="location-grid">
-
-      <div class="location-card">
-
-        <h3>
-          Huamantla
-        </h3>
-
-        <p>
-          Tlaxcala
-        </p>
 
       </div>
 
 
-      <div class="location-card">
+    </section>
 
-        <h3>
-          Puebla
-        </h3>
 
-        <p>
-          Puebla
-        </p>
+
+    <!-- =========================================
+         MEDICINA INTERNA
+    ========================================== -->
+
+    <section class="internal-medicine">
+
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Atención especializada
+          </span>
+
+          <h2>
+            ¿Qué es la Medicina Interna?
+          </h2>
+
+          <p>
+            Una visión completa de la salud
+            del paciente adulto.
+          </p>
+
+        </div>
+
+
+
+        <div class="medicine-box">
+
+
+          <p>
+
+            La Medicina Interna se especializa en la
+            prevención, diagnóstico y tratamiento de
+            enfermedades del adulto.
+
+          </p>
+
+
+          <p>
+
+            Permite integrar diferentes síntomas,
+            antecedentes, enfermedades, medicamentos
+            y factores de riesgo para comprender el
+            estado de salud del paciente como un conjunto.
+
+          </p>
+
+
+          <p>
+
+            Es especialmente útil cuando existen
+            múltiples padecimientos, síntomas persistentes
+            o cuadros clínicos que requieren una
+            evaluación integral.
+
+          </p>
+
+
+        </div>
+
 
       </div>
 
-    </div>
 
-  </div>
-
-</section>
+    </section>
 
 
-<!-- CONTACTO -->
 
-<section class="contact" id="contacto">
+    <!-- =========================================
+         SERVICIOS
+    ========================================== -->
 
-  <div class="container">
+    <section id="servicios">
 
-    <h2>
-      Agenda tu consulta
-    </h2>
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Consulta
+          </span>
+
+          <h2>
+            Servicios
+          </h2>
+
+          <p>
+            Atención enfocada en prevención,
+            diagnóstico y seguimiento.
+          </p>
+
+        </div>
+
+
+
+        <div class="services-grid">
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              01
+            </span>
+
+            <h3>
+              Diabetes
+            </h3>
+
+            <p>
+              Diagnóstico, control metabólico,
+              tratamiento y prevención de complicaciones.
+            </p>
+
+          </article>
+
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              02
+            </span>
+
+            <h3>
+              Hipertensión arterial
+            </h3>
+
+            <p>
+              Evaluación de la presión arterial,
+              tratamiento y seguimiento.
+            </p>
+
+          </article>
+
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              03
+            </span>
+
+            <h3>
+              Colesterol y triglicéridos
+            </h3>
+
+            <p>
+              Evaluación de dislipidemias
+              y riesgo cardiovascular.
+            </p>
+
+          </article>
+
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              04
+            </span>
+
+            <h3>
+              Valoración preoperatoria
+            </h3>
+
+            <p>
+              Evaluación médica integral
+              antes de procedimientos quirúrgicos.
+            </p>
+
+          </article>
+
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              05
+            </span>
+
+            <h3>
+              Evaluación integral de síntomas
+            </h3>
+
+            <p>
+              Estudio de síntomas persistentes
+              o cuya causa aún no ha sido identificada.
+            </p>
+
+          </article>
+
+
+
+          <article class="service-card">
+
+            <span class="service-number">
+              06
+            </span>
+
+            <h3>
+              Pacientes con múltiples enfermedades
+            </h3>
+
+            <p>
+              Integración de diagnósticos,
+              tratamientos y factores de riesgo.
+            </p>
+
+          </article>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         ESTUDIOS
+    ========================================== -->
+
+    <section class="studies">
+
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Evaluación complementaria
+          </span>
+
+          <h2>
+            Estudios disponibles
+          </h2>
+
+          <p>
+            Herramientas complementarias
+            para una evaluación clínica más completa.
+          </p>
+
+        </div>
+
+
+
+        <div class="studies-grid">
+
+
+          <article class="study-card">
+
+            <h3>
+              MAPA
+            </h3>
+
+            <p>
+              Monitoreo Ambulatorio de Presión Arterial
+              para evaluar la presión durante 24 horas
+              y mejorar el diagnóstico y control de
+              hipertensión arterial.
+            </p>
+
+          </article>
+
+
+
+          <article class="study-card">
+
+            <h3>
+              Electrocardiograma
+            </h3>
+
+            <p>
+              Registro de la actividad eléctrica
+              del corazón como herramienta de apoyo
+              en la evaluación cardiovascular.
+            </p>
+
+          </article>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         ÁREAS
+    ========================================== -->
+
+    <section>
+
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Visión integral
+          </span>
+
+          <h2>
+            Áreas de atención
+          </h2>
+
+          <p>
+            Evaluación de enfermedades
+            relacionadas con diferentes órganos
+            y sistemas.
+          </p>
+
+        </div>
+
+
+
+        <div class="areas-grid">
+
+
+          <div class="area">
+            Cerebro
+          </div>
+
+          <div class="area">
+            Tiroides
+          </div>
+
+          <div class="area">
+            Pulmones
+          </div>
+
+          <div class="area">
+            Corazón
+          </div>
+
+          <div class="area">
+            Hígado
+          </div>
+
+          <div class="area">
+            Intestino
+          </div>
+
+          <div class="area">
+            Riñones
+          </div>
+
+          <div class="area">
+            Metabolismo
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         SOBRE MÍ
+    ========================================== -->
+
+    <section
+      class="about-me"
+      id="sobre-mi"
+    >
+
+
+      <div class="container profile-grid">
+
+
+        <div class="profile-photo">
+
+
+          <img
+            src="images/dr-miguel-rocha.png"
+            alt="Fotografía del Dr. José Miguel Rocha Sánchez"
+          >
+
+
+        </div>
+
+
+
+        <div class="profile-content">
+
+
+          <span class="section-heading eyebrow"
+                style="text-align:left; margin:0 0 8px;">
+            Sobre mí
+          </span>
+
+
+          <h2>
+            Dr. José Miguel Rocha Sánchez
+          </h2>
+
+
+          <span class="profile-specialty">
+            Médico Internista
+          </span>
+
+
+          <p>
+
+            Médico especialista en Medicina Interna
+            enfocado en la evaluación integral
+            del paciente adulto.
+
+          </p>
+
+
+          <p>
+
+            Mi objetivo es integrar síntomas,
+            antecedentes, enfermedades,
+            estudios y tratamientos para brindar
+            una evaluación clínica completa.
+
+          </p>
+
+
+          <p>
+
+            La atención se orienta a establecer
+            diagnósticos precisos, prevenir
+            complicaciones y definir estrategias
+            de tratamiento individualizadas.
+
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         UBICACIONES
+    ========================================== -->
+
+    <section
+      class="locations"
+      id="ubicaciones"
+    >
+
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Consulta presencial
+          </span>
+
+          <h2>
+            Ubicaciones
+          </h2>
+
+          <p>
+            Atención disponible en Tlaxcala
+            y Puebla.
+          </p>
+
+        </div>
+
+
+
+        <div class="locations-grid">
+
+
+          <div class="location-card">
+
+            <h3>
+              Huamantla
+            </h3>
+
+            <p>
+              Tlaxcala
+            </p>
+
+          </div>
+
+
+
+          <div class="location-card">
+
+            <h3>
+              Puebla
+            </h3>
+
+            <p>
+              Puebla
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         CONTACTO
+    ========================================== -->
+
+    <section
+      class="contact"
+      id="contacto"
+    >
+
+
+      <div class="container">
+
+
+        <div class="contact-box">
+
+
+          <img
+            src="images/logo-jmrs.png"
+            alt="Logotipo JMRS"
+          >
+
+
+          <h2>
+            Agenda tu consulta
+          </h2>
+
+
+          <p>
+
+            Para conocer horarios disponibles
+            o solicitar una cita, comunícate
+            directamente por WhatsApp.
+
+          </p>
+
+
+
+          <!--
+          IMPORTANTE:
+          DESPUÉS CAMBIAREMOS 52TU_NUMERO
+          POR TU NÚMERO REAL
+          -->
+
+
+          <a
+            href="https://wa.me/52TU_NUMERO"
+            target="_blank"
+            class="button button-primary"
+            style="
+              background:#0d4772;
+              color:white;
+            "
+          >
+            Contactar por WhatsApp
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
+  <footer>
+
 
     <p>
-      Para información sobre disponibilidad y citas,
-      comunícate directamente.
+
+      <strong>
+        Dr. José Miguel Rocha Sánchez
+      </strong>
+
     </p>
 
-    <!-- Después colocaremos aquí tu WhatsApp real -->
 
-    <a href="#"
-       class="whatsapp-button">
-      Contactar para cita
-    </a>
-
-  </div>
-
-</section>
+    <p>
+      Medicina Interna
+    </p>
 
 
-<footer>
+    <p>
+      Huamantla, Tlaxcala · Puebla, Puebla
+    </p>
 
-  <p>
-    <strong>Dr. José Miguel Rocha Sánchez</strong>
-  </p>
 
-  <p>
-    Medicina Interna · Huamantla, Tlaxcala · Puebla, Puebla
-  </p>
+    <p style="margin-top:12px;">
+      © 2026 Todos los derechos reservados.
+    </p>
 
-  <br>
 
-  <p>
-    © 2026 Todos los derechos reservados.
-  </p>
-
-</footer>
+  </footer>
 
 
 </body>
+
 </html>
