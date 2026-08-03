@@ -90,7 +90,7 @@
 
 
   <!-- =========================================
-       TWITTER / VISTA PREVIA
+       TWITTER
   ========================================== -->
 
   <meta
@@ -119,118 +119,70 @@
   ========================================== -->
 
   <script type="application/ld+json">
-
   {
     "@context": "https://schema.org",
-
     "@graph": [
 
       {
         "@type": "Person",
+        "@id": "https://drmiguelrocha.github.io/#doctor",
 
-        "@id":
-        "https://drmiguelrocha.github.io/#doctor",
+        "name": "Dr. José Miguel Rocha Sánchez",
+        "givenName": "José Miguel",
+        "familyName": "Rocha Sánchez",
+        "jobTitle": "Médico Internista",
 
-        "name":
-        "Dr. José Miguel Rocha Sánchez",
+        "url": "https://drmiguelrocha.github.io/",
+        "image": "https://drmiguelrocha.github.io/images/dr-miguel-rocha.png",
 
-        "givenName":
-        "José Miguel",
-
-        "familyName":
-        "Rocha Sánchez",
-
-        "jobTitle":
-        "Médico Internista",
-
-        "url":
-        "https://drmiguelrocha.github.io/",
-
-        "image":
-        "https://drmiguelrocha.github.io/images/dr-miguel-rocha.png",
-
-        "telephone":
-        "+52 247 101 2260",
+        "telephone": "+52 247 101 2260",
 
         "description":
         "Médico especialista en Medicina Interna. Consulta en Puebla y atención programada en Huamantla, Tlaxcala.",
 
         "alumniOf": [
-
           {
-            "@type":
-            "CollegeOrUniversity",
-
-            "name":
-            "Universidad Autónoma de Tlaxcala"
+            "@type": "CollegeOrUniversity",
+            "name": "Universidad Autónoma de Tlaxcala"
           },
-
           {
-            "@type":
-            "CollegeOrUniversity",
-
-            "name":
-            "Benemérita Universidad Autónoma de Puebla"
+            "@type": "CollegeOrUniversity",
+            "name": "Benemérita Universidad Autónoma de Puebla"
           }
-
         ],
 
         "hasCredential": [
 
           {
-            "@type":
-            "EducationalOccupationalCredential",
-
-            "name":
-            "Cédula profesional de Médico Cirujano",
-
-            "identifier":
-            "12355482"
+            "@type": "EducationalOccupationalCredential",
+            "name": "Cédula profesional de Médico Cirujano",
+            "identifier": "12355482"
           },
 
           {
-            "@type":
-            "EducationalOccupationalCredential",
-
-            "name":
-            "Cédula de Especialidad en Medicina Interna",
-
-            "identifier":
-            "15715376"
+            "@type": "EducationalOccupationalCredential",
+            "name": "Cédula de Especialidad en Medicina Interna",
+            "identifier": "15715376"
           },
 
           {
-            "@type":
-            "EducationalOccupationalCredential",
-
-            "name":
-            "Certificación en Medicina Interna",
-
-            "identifier":
-            "10204-26",
+            "@type": "EducationalOccupationalCredential",
+            "name": "Certificación en Medicina Interna",
+            "identifier": "10204-26",
 
             "recognizedBy": {
-
-              "@type":
-              "Organization",
-
-              "name":
-              "Consejo Mexicano de Medicina Interna"
-
+              "@type": "Organization",
+              "name": "Consejo Mexicano de Medicina Interna"
             }
           }
 
         ]
-
       },
 
 
       {
-        "@type":
-        "Physician",
-
-        "@id":
-        "https://drmiguelrocha.github.io/#consultorio",
+        "@type": "Physician",
+        "@id": "https://drmiguelrocha.github.io/#consultorio",
 
         "name":
         "Dr. José Miguel Rocha Sánchez - Medicina Interna",
@@ -251,69 +203,43 @@
         "Consulta de Medicina Interna en Puebla y atención programada en Huamantla, Tlaxcala.",
 
         "employee": {
-          "@id":
-          "https://drmiguelrocha.github.io/#doctor"
+          "@id": "https://drmiguelrocha.github.io/#doctor"
         },
 
         "address": {
-
-          "@type":
-          "PostalAddress",
-
-          "streetAddress":
-          "Blvd. 14 Sur 4302",
-
-          "addressLocality":
-          "Puebla",
-
-          "addressRegion":
-          "Puebla",
-
-          "postalCode":
-          "72570",
-
-          "addressCountry":
-          "MX"
-
+          "@type": "PostalAddress",
+          "streetAddress": "Blvd. 14 Sur 4302",
+          "addressLocality": "Puebla",
+          "addressRegion": "Puebla",
+          "postalCode": "72570",
+          "addressCountry": "MX"
         },
 
         "areaServed": [
 
           {
-            "@type":
-            "City",
-
-            "name":
-            "Puebla, Puebla"
+            "@type": "City",
+            "name": "Puebla, Puebla"
           },
 
           {
-            "@type":
-            "City",
-
-            "name":
-            "Huamantla, Tlaxcala"
+            "@type": "City",
+            "name": "Huamantla, Tlaxcala"
           },
 
           {
-            "@type":
-            "State",
-
-            "name":
-            "Tlaxcala"
+            "@type": "State",
+            "name": "Tlaxcala"
           }
 
         ],
 
         "hasMap":
         "https://maps.app.goo.gl/EGhUhLtQEeJP8uM38"
-
       }
 
     ]
-
   }
-
   </script>
 
 
@@ -338,9 +264,7 @@
   >
 
 
-
 <style>
-
 
 /* =========================================
    VARIABLES
@@ -364,9 +288,7 @@
 
   --sombra:
     0 18px 50px rgba(7,27,46,.12);
-
 }
-
 
 
 /* =========================================
@@ -374,22 +296,14 @@
 ========================================= */
 
 * {
-
   margin: 0;
-
   padding: 0;
-
   box-sizing: border-box;
-
 }
-
 
 html {
-
   scroll-behavior: smooth;
-
 }
-
 
 body {
 
@@ -399,45 +313,27 @@ body {
     sans-serif;
 
   color: #1d2c39;
-
   background: white;
-
   line-height: 1.65;
-
 }
-
 
 img {
-
   display: block;
-
   max-width: 100%;
-
 }
-
 
 a {
-
   text-decoration: none;
-
 }
-
 
 .container {
-
   width: min(1180px, 92%);
-
   margin: auto;
-
 }
-
 
 section {
-
   padding: 90px 0;
-
 }
-
 
 
 /* =========================================
@@ -447,9 +343,7 @@ section {
 header {
 
   position: sticky;
-
   top: 0;
-
   z-index: 1000;
 
   background:
@@ -460,49 +354,36 @@ header {
 
   border-bottom:
     1px solid #e6edf2;
-
 }
-
 
 .navbar {
 
   min-height: 78px;
 
   display: flex;
-
-  justify-content:
-    space-between;
-
+  justify-content: space-between;
   align-items: center;
 
   gap: 25px;
-
 }
-
 
 .brand {
 
   display: flex;
-
   align-items: center;
 
   gap: 12px;
-
 }
-
 
 .brand img {
 
   width: 52px;
-
   height: 52px;
 
   object-fit: contain;
 
   border-radius: 10px;
-
 }
-
 
 .brand-info strong {
 
@@ -512,11 +393,8 @@ header {
     var(--azul-oscuro);
 
   font-size: 14px;
-
   line-height: 1.2;
-
 }
-
 
 .brand-info span {
 
@@ -530,44 +408,30 @@ header {
   font-size: 11px;
 
   letter-spacing: 1px;
-
-  text-transform:
-    uppercase;
-
+  text-transform: uppercase;
 }
-
 
 .menu {
 
   display: flex;
-
   align-items: center;
 
-  gap: 18px;
-
+  gap: 17px;
 }
-
 
 .menu a {
 
   color: #354e62;
 
   font-size: 12px;
-
   font-weight: 600;
 
   transition: .2s;
-
 }
-
 
 .menu a:hover {
-
-  color:
-    var(--azul-medio);
-
+  color: var(--azul-medio);
 }
-
 
 
 /* =========================================
@@ -579,7 +443,6 @@ header {
   min-height: 650px;
 
   display: flex;
-
   align-items: center;
 
   color: white;
@@ -600,9 +463,7 @@ header {
     );
 
   overflow: hidden;
-
 }
-
 
 .hero-grid {
 
@@ -617,101 +478,66 @@ header {
   gap: 55px;
 
   padding: 65px 0;
-
 }
-
 
 .hero-tag {
 
   display: inline-block;
 
-  padding:
-    8px 15px;
-
-  margin-bottom:
-    20px;
+  padding: 8px 15px;
+  margin-bottom: 20px;
 
   border:
-    1px solid
-    rgba(255,255,255,.20);
+    1px solid rgba(255,255,255,.20);
 
-  border-radius:
-    100px;
+  border-radius: 100px;
 
   background:
     rgba(255,255,255,.07);
 
-  color:
-    #d9edf9;
+  color: #d9edf9;
 
-  font-size:
-    12px;
+  font-size: 12px;
+  font-weight: 700;
 
-  font-weight:
-    700;
-
-  letter-spacing:
-    2px;
-
+  letter-spacing: 2px;
 }
-
 
 .hero h1 {
 
-  max-width:
-    700px;
+  max-width: 700px;
+  margin-bottom: 14px;
 
-  margin-bottom:
-    14px;
-
-  color:
-    white;
+  color: white;
 
   font-size:
     clamp(2.5rem,5vw,4.5rem);
 
-  line-height:
-    1.04;
-
-  font-weight:
-    800;
-
+  line-height: 1.04;
+  font-weight: 800;
 }
-
 
 .hero h2 {
 
-  margin-bottom:
-    24px;
+  margin-bottom: 24px;
 
-  color:
-    #cde8f8;
+  color: #cde8f8;
 
   font-size:
     clamp(1.25rem,2vw,1.75rem);
 
-  font-weight:
-    500;
-
+  font-weight: 500;
 }
-
 
 .hero-description {
 
-  max-width:
-    650px;
+  max-width: 650px;
+  margin-bottom: 30px;
 
-  margin-bottom:
-    30px;
+  color: #e1edf5;
 
-  color:
-    #e1edf5;
-
-  font-size:
-    17px;
-
+  font-size: 17px;
 }
-
 
 
 /* BOTONES */
@@ -719,214 +545,137 @@ header {
 .hero-buttons {
 
   display: flex;
-
   flex-wrap: wrap;
 
   gap: 14px;
 
-  margin-bottom:
-    34px;
-
+  margin-bottom: 34px;
 }
-
 
 .button {
 
-  display:
-    inline-flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-  align-items:
-    center;
+  min-height: 50px;
 
-  justify-content:
-    center;
+  padding: 0 24px;
 
-  min-height:
-    50px;
+  border-radius: 10px;
 
-  padding:
-    0 24px;
+  font-size: 14px;
+  font-weight: 700;
 
-  border-radius:
-    10px;
-
-  font-size:
-    14px;
-
-  font-weight:
-    700;
-
-  transition:
-    .2s ease;
-
+  transition: .2s ease;
 }
-
 
 .button-primary {
 
-  background:
-    white;
-
-  color:
-    var(--azul-principal);
-
+  background: white;
+  color: var(--azul-principal);
 }
-
 
 .button-primary:hover {
-
-  transform:
-    translateY(-2px);
-
+  transform: translateY(-2px);
 }
-
 
 .button-outline {
 
-  color:
-    white;
+  color: white;
 
   border:
-    1px solid
-    rgba(255,255,255,.35);
+    1px solid rgba(255,255,255,.35);
 
   background:
     rgba(255,255,255,.04);
-
 }
-
 
 .button-outline:hover {
-
-  background:
-    rgba(255,255,255,.10);
-
+  background: rgba(255,255,255,.10);
 }
-
 
 
 /* HERO FEATURES */
 
 .hero-features {
 
-  display:
-    grid;
-
+  display: grid;
   grid-template-columns:
     repeat(3,1fr);
 
-  gap:
-    12px;
-
+  gap: 12px;
 }
-
 
 .hero-feature {
 
-  padding:
-    15px;
+  padding: 15px;
 
   background:
     rgba(255,255,255,.06);
 
   border:
-    1px solid
-    rgba(255,255,255,.10);
+    1px solid rgba(255,255,255,.10);
 
-  border-radius:
-    13px;
-
+  border-radius: 13px;
 }
-
 
 .hero-feature strong {
 
-  display:
-    block;
+  display: block;
+  margin-bottom: 3px;
 
-  margin-bottom:
-    3px;
+  color: white;
 
-  color:
-    white;
-
-  font-size:
-    13px;
-
+  font-size: 13px;
 }
-
 
 .hero-feature span {
 
-  color:
-    #bfd5e4;
+  color: #bfd5e4;
 
-  font-size:
-    11px;
-
+  font-size: 11px;
 }
-
 
 
 /* FOTO HERO */
 
 .hero-photo-wrapper {
 
-  display:
-    flex;
-
-  justify-content:
-    center;
-
+  display: flex;
+  justify-content: center;
 }
-
 
 .hero-photo-card {
 
-  width:
-    100%;
+  width: 100%;
+  max-width: 470px;
 
-  max-width:
-    470px;
-
-  padding:
-    14px;
+  padding: 14px;
 
   border:
-    1px solid
-    rgba(255,255,255,.13);
+    1px solid rgba(255,255,255,.13);
 
-  border-radius:
-    30px;
+  border-radius: 30px;
 
   background:
     rgba(255,255,255,.07);
 
-  box-shadow:
-    var(--sombra);
-
+  box-shadow: var(--sombra);
 }
-
 
 .hero-photo-card img {
 
-  width:
-    100%;
+  width: 100%;
 
   aspect-ratio:
     4 / 5;
 
-  object-fit:
-    cover;
+  object-fit: cover;
+  object-position: center top;
 
-  object-position:
-    center top;
-
-  border-radius:
-    22px;
-
+  border-radius: 22px;
 }
-
 
 
 /* =========================================
@@ -935,48 +684,33 @@ header {
 
 .section-heading {
 
-  max-width:
-    780px;
+  max-width: 780px;
 
   margin:
     0 auto 48px;
 
-  text-align:
-    center;
-
+  text-align: center;
 }
-
 
 .eyebrow {
 
-  display:
-    block;
+  display: block;
 
-  margin-bottom:
-    9px;
+  margin-bottom: 9px;
 
   color:
     var(--azul-medio);
 
-  font-size:
-    12px;
+  font-size: 12px;
+  font-weight: 800;
 
-  font-weight:
-    800;
-
-  letter-spacing:
-    2px;
-
-  text-transform:
-    uppercase;
-
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-
 
 .section-heading h2 {
 
-  margin-bottom:
-    13px;
+  margin-bottom: 13px;
 
   color:
     var(--azul-oscuro);
@@ -984,22 +718,16 @@ header {
   font-size:
     clamp(1.9rem,4vw,2.65rem);
 
-  line-height:
-    1.2;
-
+  line-height: 1.2;
 }
-
 
 .section-heading p {
 
   color:
     var(--gris-texto);
 
-  font-size:
-    16px;
-
+  font-size: 16px;
 }
-
 
 
 /* =========================================
@@ -1007,62 +735,40 @@ header {
 ========================================= */
 
 .internal-medicine {
-
-  background:
-    var(--gris-fondo);
-
+  background: var(--gris-fondo);
 }
-
 
 .medicine-box {
 
-  max-width:
-    980px;
+  max-width: 980px;
+  margin: auto;
 
-  margin:
-    auto;
+  padding: 38px;
 
-  padding:
-    38px;
-
-  background:
-    white;
+  background: white;
 
   border:
-    1px solid
-    var(--borde);
+    1px solid var(--borde);
 
-  border-radius:
-    22px;
+  border-radius: 22px;
 
   box-shadow:
-    0 10px 30px
-    rgba(13,71,114,.05);
-
+    0 10px 30px rgba(13,71,114,.05);
 }
-
 
 .medicine-box p {
 
-  margin-bottom:
-    16px;
+  margin-bottom: 16px;
 
   color:
     var(--gris-texto);
 
-  font-size:
-    16px;
-
+  font-size: 16px;
 }
-
 
 .medicine-box p:last-child {
-
-  margin-bottom:
-    0;
-
+  margin-bottom: 0;
 }
-
 
 
 /* =========================================
@@ -1071,38 +777,27 @@ header {
 
 .services-grid {
 
-  display:
-    grid;
+  display: grid;
 
   grid-template-columns:
     repeat(3,1fr);
 
-  gap:
-    22px;
-
+  gap: 22px;
 }
-
 
 .service-card {
 
-  padding:
-    28px;
+  padding: 28px;
 
-  background:
-    white;
+  background: white;
 
   border:
-    1px solid
-    var(--borde);
+    1px solid var(--borde);
 
-  border-radius:
-    19px;
+  border-radius: 19px;
 
-  transition:
-    .25s ease;
-
+  transition: .25s ease;
 }
-
 
 .service-card:hover {
 
@@ -1110,74 +805,48 @@ header {
     translateY(-5px);
 
   box-shadow:
-    0 16px 35px
-    rgba(13,71,114,.09);
-
+    0 16px 35px rgba(13,71,114,.09);
 }
-
 
 .service-number {
 
-  display:
-    inline-flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-  align-items:
-    center;
+  width: 38px;
+  height: 38px;
 
-  justify-content:
-    center;
+  margin-bottom: 18px;
 
-  width:
-    38px;
+  border-radius: 10px;
 
-  height:
-    38px;
-
-  margin-bottom:
-    18px;
-
-  border-radius:
-    10px;
-
-  background:
-    #e8f3f9;
+  background: #e8f3f9;
 
   color:
     var(--azul-principal);
 
-  font-size:
-    13px;
-
-  font-weight:
-    800;
-
+  font-size: 13px;
+  font-weight: 800;
 }
-
 
 .service-card h3 {
 
-  margin-bottom:
-    9px;
+  margin-bottom: 9px;
 
   color:
     var(--azul-principal);
 
-  font-size:
-    17px;
-
+  font-size: 17px;
 }
-
 
 .service-card p {
 
   color:
     var(--gris-texto);
 
-  font-size:
-    14px;
-
+  font-size: 14px;
 }
-
 
 
 /* =========================================
@@ -1185,75 +854,51 @@ header {
 ========================================= */
 
 .studies {
-
-  background:
-    var(--gris-fondo);
-
+  background: var(--gris-fondo);
 }
-
 
 .studies-grid {
 
-  display:
-    grid;
+  display: grid;
 
   grid-template-columns:
     repeat(2,1fr);
 
-  gap:
-    25px;
+  gap: 25px;
 
-  max-width:
-    900px;
-
-  margin:
-    auto;
-
+  max-width: 900px;
+  margin: auto;
 }
-
 
 .study-card {
 
-  padding:
-    32px;
+  padding: 32px;
 
-  background:
-    white;
+  background: white;
 
   border:
-    1px solid
-    var(--borde);
+    1px solid var(--borde);
 
-  border-radius:
-    20px;
-
+  border-radius: 20px;
 }
-
 
 .study-card h3 {
 
-  margin-bottom:
-    9px;
+  margin-bottom: 9px;
 
   color:
     var(--azul-principal);
 
-  font-size:
-    19px;
-
+  font-size: 19px;
 }
-
 
 .study-card p {
 
   color:
     var(--gris-texto);
 
-  font-size:
-    14px;
-
+  font-size: 14px;
 }
-
 
 
 /* =========================================
@@ -1262,59 +907,40 @@ header {
 
 .areas-grid {
 
-  display:
-    grid;
+  display: grid;
 
   grid-template-columns:
     repeat(4,1fr);
 
-  gap:
-    15px;
-
+  gap: 15px;
 }
-
 
 .area {
 
-  min-height:
-    84px;
+  min-height: 84px;
 
-  display:
-    flex;
+  display: flex;
 
-  align-items:
-    center;
+  align-items: center;
+  justify-content: center;
 
-  justify-content:
-    center;
+  padding: 16px;
 
-  padding:
-    16px;
-
-  text-align:
-    center;
+  text-align: center;
 
   color:
     var(--azul-principal);
 
-  background:
-    white;
+  background: white;
 
   border:
-    1px solid
-    var(--borde);
+    1px solid var(--borde);
 
-  border-radius:
-    15px;
+  border-radius: 15px;
 
-  font-size:
-    14px;
-
-  font-weight:
-    700;
-
+  font-size: 14px;
+  font-weight: 700;
 }
-
 
 
 /* =========================================
@@ -1322,56 +948,38 @@ header {
 ========================================= */
 
 .when-internist {
-
-  background:
-    var(--gris-fondo);
-
+  background: var(--gris-fondo);
 }
-
 
 .when-grid {
 
-  display:
-    grid;
+  display: grid;
 
   grid-template-columns:
     repeat(2,1fr);
 
-  gap:
-    18px;
+  gap: 18px;
 
-  max-width:
-    1000px;
-
-  margin:
-    auto;
-
+  max-width: 1000px;
+  margin: auto;
 }
-
 
 .when-card {
 
-  position:
-    relative;
+  position: relative;
 
   padding:
     26px 26px 26px 72px;
 
-  background:
-    white;
+  background: white;
 
   border:
-    1px solid
-    var(--borde);
+    1px solid var(--borde);
 
-  border-radius:
-    18px;
+  border-radius: 18px;
 
-  transition:
-    .25s ease;
-
+  transition: .25s ease;
 }
-
 
 .when-card:hover {
 
@@ -1379,105 +987,70 @@ header {
     translateY(-3px);
 
   box-shadow:
-    0 14px 32px
-    rgba(13,71,114,.07);
-
+    0 14px 32px rgba(13,71,114,.07);
 }
-
 
 .when-icon {
 
-  position:
-    absolute;
+  position: absolute;
 
-  left:
-    24px;
+  left: 24px;
+  top: 27px;
 
-  top:
-    27px;
+  width: 34px;
+  height: 34px;
 
-  width:
-    34px;
+  display: flex;
 
-  height:
-    34px;
+  align-items: center;
+  justify-content: center;
 
-  display:
-    flex;
-
-  align-items:
-    center;
-
-  justify-content:
-    center;
-
-  background:
-    #e7f1f7;
+  background: #e7f1f7;
 
   color:
     var(--azul-principal);
 
-  border-radius:
-    10px;
+  border-radius: 10px;
 
-  font-size:
-    11px;
-
-  font-weight:
-    800;
-
+  font-size: 11px;
+  font-weight: 800;
 }
-
 
 .when-card h3 {
 
-  margin-bottom:
-    7px;
+  margin-bottom: 7px;
 
   color:
     var(--azul-oscuro);
 
-  font-size:
-    16px;
-
+  font-size: 16px;
 }
-
 
 .when-card p {
 
   color:
     var(--gris-texto);
 
-  font-size:
-    14px;
-
+  font-size: 14px;
 }
-
 
 .when-cta {
 
-  max-width:
-    850px;
+  max-width: 850px;
 
   margin:
     35px auto 0;
 
-  text-align:
-    center;
-
+  text-align: center;
 }
-
 
 .when-cta p {
 
-  margin-bottom:
-    18px;
+  margin-bottom: 18px;
 
   color:
     var(--gris-texto);
-
 }
-
 
 
 /* =========================================
@@ -1485,140 +1058,96 @@ header {
 ========================================= */
 
 .about-me {
-
-  background:
-    white;
-
+  background: white;
 }
-
 
 .profile-grid {
 
-  display:
-    grid;
+  display: grid;
 
   grid-template-columns:
     minmax(280px,.8fr)
     minmax(0,1.2fr);
 
-  align-items:
-    center;
+  align-items: center;
 
-  gap:
-    50px;
-
+  gap: 50px;
 }
-
 
 .profile-photo {
 
-  padding:
-    13px;
+  padding: 13px;
 
-  background:
-    white;
+  background: white;
 
   border:
-    1px solid
-    var(--borde);
+    1px solid var(--borde);
 
-  border-radius:
-    25px;
+  border-radius: 25px;
 
   box-shadow:
-    0 15px 40px
-    rgba(7,27,46,.08);
-
+    0 15px 40px rgba(7,27,46,.08);
 }
-
 
 .profile-photo img {
 
-  width:
-    100%;
+  width: 100%;
 
-  border-radius:
-    18px;
-
+  border-radius: 18px;
 }
-
 
 .profile-content h2 {
 
-  margin-bottom:
-    7px;
+  margin-bottom: 7px;
 
   color:
     var(--azul-oscuro);
 
   font-size:
     clamp(1.8rem,4vw,2.7rem);
-
 }
-
 
 .profile-specialty {
 
-  display:
-    block;
+  display: block;
 
-  margin-bottom:
-    18px;
+  margin-bottom: 18px;
 
   color:
     var(--azul-medio);
 
-  font-size:
-    15px;
-
-  font-weight:
-    700;
-
+  font-size: 15px;
+  font-weight: 700;
 }
-
 
 .profile-certified {
 
-  display:
-    inline-block;
+  display: inline-block;
 
-  margin-bottom:
-    22px;
+  margin-bottom: 22px;
 
-  padding:
-    8px 13px;
+  padding: 8px 13px;
 
   color:
     var(--azul-principal);
 
-  background:
-    #e7f1f7;
+  background: #e7f1f7;
 
-  border-radius:
-    9px;
+  border-radius: 9px;
 
-  font-size:
-    12px;
-
-  font-weight:
-    700;
-
+  font-size: 12px;
+  font-weight: 700;
 }
-
 
 .profile-content p {
 
-  margin-bottom:
-    14px;
+  margin-bottom: 14px;
 
   color:
     var(--gris-texto);
 
-  font-size:
-    15px;
-
+  font-size: 15px;
 }
-
 
 
 /* =========================================
@@ -1626,47 +1155,32 @@ header {
 ========================================= */
 
 .credentials {
-
-  background:
-    var(--gris-fondo);
-
+  background: var(--gris-fondo);
 }
-
 
 .credentials-grid {
 
-  display:
-    grid;
+  display: grid;
 
   grid-template-columns:
     repeat(3,1fr);
 
-  gap:
-    22px;
-
+  gap: 22px;
 }
-
 
 .credential-card {
 
-  padding:
-    30px;
+  padding: 30px;
 
-  background:
-    white;
+  background: white;
 
   border:
-    1px solid
-    var(--borde);
+    1px solid var(--borde);
 
-  border-radius:
-    20px;
+  border-radius: 20px;
 
-  transition:
-    .25s ease;
-
+  transition: .25s ease;
 }
-
 
 .credential-card:hover {
 
@@ -1674,104 +1188,71 @@ header {
     translateY(-4px);
 
   box-shadow:
-    0 16px 36px
-    rgba(13,71,114,.08);
-
+    0 16px 36px rgba(13,71,114,.08);
 }
-
 
 .credential-type {
 
-  display:
-    inline-block;
+  display: inline-block;
 
-  margin-bottom:
-    18px;
+  margin-bottom: 18px;
 
   color:
     var(--azul-medio);
 
-  font-size:
-    10px;
+  font-size: 10px;
+  font-weight: 800;
 
-  font-weight:
-    800;
-
-  letter-spacing:
-    1.5px;
-
-  text-transform:
-    uppercase;
-
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
-
 
 .credential-card h3 {
 
-  margin-bottom:
-    10px;
+  margin-bottom: 10px;
 
   color:
     var(--azul-oscuro);
 
-  font-size:
-    18px;
-
+  font-size: 18px;
 }
-
 
 .credential-card p {
 
-  margin-bottom:
-    10px;
+  margin-bottom: 10px;
 
   color:
     var(--gris-texto);
 
-  font-size:
-    13px;
-
+  font-size: 13px;
 }
-
 
 .credential-number {
 
-  display:
-    block;
+  display: block;
 
-  margin-top:
-    16px;
+  margin-top: 16px;
 
   color:
     var(--azul-principal);
 
-  font-size:
-    13px;
-
-  font-weight:
-    800;
-
+  font-size: 13px;
+  font-weight: 800;
 }
-
 
 .certification-card {
 
-  color:
-    white;
+  color: white;
 
   background:
-
     linear-gradient(
       145deg,
       #071b2e,
       #0c4773
     );
 
-  border:
-    none;
-
+  border: none;
 }
-
 
 .certification-card
 .credential-type,
@@ -1781,19 +1262,13 @@ header {
 .certification-card
 .credential-number {
 
-  color:
-    white;
-
+  color: white;
 }
-
 
 .certification-card p {
 
-  color:
-    #d7e6f1;
-
+  color: #d7e6f1;
 }
-
 
 
 /* =========================================
@@ -1802,181 +1277,120 @@ header {
 
 .locations {
 
-  color:
-    white;
+  color: white;
 
   background:
-
     linear-gradient(
       120deg,
       #06192b,
       #0b3d64
     );
-
 }
-
 
 .locations
 .section-heading h2 {
 
-  color:
-    white;
-
+  color: white;
 }
-
 
 .locations
 .section-heading p {
 
-  color:
-    #d7e7f3;
-
+  color: #d7e7f3;
 }
-
 
 .locations
 .eyebrow {
 
-  color:
-    #a9d2ec;
-
+  color: #a9d2ec;
 }
-
 
 .locations-grid {
 
-  max-width:
-    1000px;
+  max-width: 1000px;
+  margin: auto;
 
-  margin:
-    auto;
-
-  display:
-    grid;
+  display: grid;
 
   grid-template-columns:
     repeat(2,1fr);
 
-  gap:
-    20px;
-
+  gap: 20px;
 }
-
 
 .location-card {
 
-  padding:
-    34px;
+  padding: 34px;
 
   background:
     rgba(255,255,255,.06);
 
   border:
-    1px solid
-    rgba(255,255,255,.15);
+    1px solid rgba(255,255,255,.15);
 
-  border-radius:
-    20px;
-
+  border-radius: 20px;
 }
-
 
 .location-label {
 
-  display:
-    block;
+  display: block;
 
-  margin-bottom:
-    8px;
+  margin-bottom: 8px;
 
-  color:
-    #a9d2ec;
+  color: #a9d2ec;
 
-  font-size:
-    10px;
+  font-size: 10px;
+  font-weight: 800;
 
-  font-weight:
-    800;
-
-  letter-spacing:
-    2px;
-
+  letter-spacing: 2px;
 }
-
 
 .location-card h3 {
 
-  margin-bottom:
-    10px;
+  margin-bottom: 10px;
 
-  font-size:
-    23px;
-
+  font-size: 23px;
 }
-
 
 .location-card p {
 
-  color:
-    #d5e3ec;
+  color: #d5e3ec;
 
-  font-size:
-    14px;
-
+  font-size: 14px;
 }
-
 
 .location-description {
 
-  margin-top:
-    12px;
+  margin-top: 12px;
 
-  line-height:
-    1.7;
-
+  line-height: 1.7;
 }
-
 
 .location-button {
 
-  display:
-    inline-flex;
+  display: inline-flex;
 
-  align-items:
-    center;
+  align-items: center;
+  justify-content: center;
 
-  justify-content:
-    center;
+  min-height: 46px;
 
-  min-height:
-    46px;
+  margin-top: 20px;
 
-  margin-top:
-    20px;
+  padding: 0 20px;
 
-  padding:
-    0 20px;
-
-  background:
-    white;
+  background: white;
 
   color:
     var(--azul-principal);
 
-  border-radius:
-    10px;
+  border-radius: 10px;
 
-  font-size:
-    13px;
+  font-size: 13px;
+  font-weight: 700;
 
-  font-weight:
-    700;
-
-  transition:
-    .2s ease;
-
+  transition: .2s ease;
 }
-
 
 .location-button:hover {
 
@@ -1984,11 +1398,8 @@ header {
     translateY(-2px);
 
   box-shadow:
-    0 8px 20px
-    rgba(0,0,0,.15);
-
+    0 8px 20px rgba(0,0,0,.15);
 }
-
 
 
 /* =========================================
@@ -1997,133 +1408,202 @@ header {
 
 .map-section {
 
-  max-width:
-    1000px;
+  max-width: 1000px;
 
   margin:
     35px auto 0;
 
-  display:
-    grid;
+  display: grid;
 
   grid-template-columns:
     .7fr 1.3fr;
 
-  overflow:
-    hidden;
+  overflow: hidden;
 
-  background:
-    white;
+  background: white;
 
-  border-radius:
-    22px;
+  border-radius: 22px;
 
   box-shadow:
-    0 18px 45px
-    rgba(0,0,0,.14);
-
+    0 18px 45px rgba(0,0,0,.14);
 }
-
 
 .map-info {
 
-  padding:
-    35px;
+  padding: 35px;
 
-  display:
-    flex;
+  display: flex;
 
-  flex-direction:
-    column;
+  flex-direction: column;
+  justify-content: center;
 
-  justify-content:
-    center;
+  color: #1d2c39;
 
-  color:
-    #1d2c39;
-
-  background:
-    white;
-
+  background: white;
 }
-
 
 .map-info
 .location-label {
 
   color:
     var(--azul-medio);
-
 }
-
 
 .map-info h3 {
 
-  margin:
-    8px 0 12px;
+  margin: 8px 0 12px;
 
   color:
     var(--azul-oscuro);
 
-  font-size:
-    24px;
-
+  font-size: 24px;
 }
-
 
 .map-info p {
 
   color:
     var(--gris-texto);
 
-  font-size:
-    14px;
-
+  font-size: 14px;
 }
-
 
 .map-info
 .location-button {
 
-  align-self:
-    flex-start;
+  align-self: flex-start;
 
   background:
     var(--azul-principal);
 
-  color:
-    white;
-
+  color: white;
 }
-
 
 .map-container {
 
-  min-height:
-    380px;
-
+  min-height: 380px;
 }
-
 
 .map-container iframe {
 
-  display:
-    block;
+  display: block;
 
-  width:
-    100%;
+  width: 100%;
+  height: 100%;
 
-  height:
-    100%;
+  min-height: 380px;
 
-  min-height:
-    380px;
-
-  border:
-    0;
-
+  border: 0;
 }
 
+
+/* =========================================
+   RESEÑAS DE GOOGLE
+========================================= */
+
+.google-reviews {
+
+  padding: 80px 0;
+
+  background:
+    var(--gris-fondo);
+}
+
+.reviews-box {
+
+  position: relative;
+
+  max-width: 850px;
+
+  margin: auto;
+
+  padding: 50px 42px;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  background: white;
+
+  border:
+    1px solid var(--borde);
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 15px 40px rgba(13,71,114,.07);
+}
+
+.reviews-box::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  top: -110px;
+  right: -70px;
+
+  background:
+    rgba(23,106,158,.07);
+
+  border-radius: 50%;
+}
+
+.review-stars {
+
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #d6a830;
+
+  font-size: 22px;
+
+  letter-spacing: 4px;
+}
+
+.reviews-box h2 {
+
+  margin-bottom: 15px;
+
+  color:
+    var(--azul-oscuro);
+
+  font-size:
+    clamp(1.8rem,4vw,2.5rem);
+}
+
+.reviews-box p {
+
+  max-width: 680px;
+
+  margin:
+    0 auto 26px;
+
+  color:
+    var(--gris-texto);
+
+  font-size: 15px;
+}
+
+.button-review {
+
+  background:
+    var(--azul-principal);
+
+  color: white;
+}
+
+.button-review:hover {
+
+  transform:
+    translateY(-2px);
+
+  background:
+    var(--azul-oscuro);
+}
 
 
 /* =========================================
@@ -2131,343 +1611,227 @@ header {
 ========================================= */
 
 .contact {
-
-  background:
-    white;
-
+  background: white;
 }
-
 
 .contact-main {
 
-  max-width:
-    1000px;
+  max-width: 1000px;
 
-  margin:
-    auto;
+  margin: auto;
 
-  display:
-    grid;
+  display: grid;
 
   grid-template-columns:
     1.15fr .85fr;
 
-  gap:
-    25px;
-
+  gap: 25px;
 }
-
 
 .contact-info {
 
-  padding:
-    42px;
+  padding: 42px;
 
-  color:
-    white;
+  color: white;
 
   background:
-
     linear-gradient(
       135deg,
       #071b2e,
       #0d4772
     );
 
-  border-radius:
-    25px;
+  border-radius: 25px;
 
   box-shadow:
-    0 18px 45px
-    rgba(7,27,46,.13);
-
+    0 18px 45px rgba(7,27,46,.13);
 }
-
 
 .contact-logo {
 
-  width:
-    82px;
+  width: 82px;
 
-  margin-bottom:
-    22px;
+  margin-bottom: 22px;
 
-  border-radius:
-    14px;
-
+  border-radius: 14px;
 }
-
 
 .contact-info h3 {
 
-  margin-bottom:
-    5px;
+  margin-bottom: 5px;
 
-  font-size:
-    24px;
-
-  line-height:
-    1.25;
-
+  font-size: 24px;
+  line-height: 1.25;
 }
-
 
 .contact-specialty {
 
-  display:
-    block;
+  display: block;
 
-  margin-bottom:
-    20px;
+  margin-bottom: 20px;
 
-  color:
-    #bfe2f6;
+  color: #bfe2f6;
 
-  font-size:
-    14px;
+  font-size: 14px;
+  font-weight: 700;
 
-  font-weight:
-    700;
-
-  letter-spacing:
-    1px;
-
-  text-transform:
-    uppercase;
-
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
-
 
 .contact-info p {
 
-  max-width:
-    550px;
+  max-width: 550px;
 
-  margin-bottom:
-    28px;
+  margin-bottom: 28px;
 
-  color:
-    #dbe9f3;
+  color: #dbe9f3;
 
-  font-size:
-    14px;
-
+  font-size: 14px;
 }
-
 
 .contact-actions {
 
-  display:
-    flex;
+  display: flex;
+  flex-wrap: wrap;
 
-  flex-wrap:
-    wrap;
+  gap: 12px;
 
-  gap:
-    12px;
-
-  margin-bottom:
-    20px;
-
+  margin-bottom: 20px;
 }
-
 
 .contact-button {
 
-  display:
-    inline-flex;
+  display: inline-flex;
 
-  align-items:
-    center;
+  align-items: center;
+  justify-content: center;
 
-  justify-content:
-    center;
+  min-height: 50px;
 
-  min-height:
-    50px;
+  padding: 0 22px;
 
-  padding:
-    0 22px;
+  border-radius: 10px;
 
-  border-radius:
-    10px;
+  font-size: 14px;
+  font-weight: 700;
 
-  font-size:
-    14px;
-
-  font-weight:
-    700;
-
-  transition:
-    .2s ease;
-
+  transition: .2s ease;
 }
-
 
 .contact-button:hover {
 
   transform:
     translateY(-2px);
-
 }
-
 
 .contact-button.whatsapp {
 
-  background:
-    white;
+  background: white;
 
   color:
     var(--azul-principal);
-
 }
-
 
 .contact-button.phone {
 
-  color:
-    white;
+  color: white;
 
   background:
     rgba(255,255,255,.08);
 
   border:
-    1px solid
-    rgba(255,255,255,.25);
-
+    1px solid rgba(255,255,255,.25);
 }
-
 
 .phone-number {
 
-  display:
-    inline-block;
+  display: inline-block;
 
-  color:
-    #cce6f5;
+  color: #cce6f5;
 
-  font-size:
-    15px;
-
-  font-weight:
-    600;
-
+  font-size: 15px;
+  font-weight: 600;
 }
-
 
 .contact-locations {
 
-  display:
-    grid;
+  display: grid;
 
-  grid-template-columns:
-    1fr;
+  grid-template-columns: 1fr;
 
-  gap:
-    18px;
-
+  gap: 18px;
 }
-
 
 .contact-location-card {
 
-  min-height:
-    190px;
+  min-height: 190px;
 
-  display:
-    flex;
+  display: flex;
 
-  flex-direction:
-    column;
+  flex-direction: column;
+  justify-content: center;
 
-  justify-content:
-    center;
+  padding: 30px;
 
-  padding:
-    30px;
-
-  background:
-    #f8fafc;
+  background: #f8fafc;
 
   border:
-    1px solid
-    var(--borde);
+    1px solid var(--borde);
 
-  border-radius:
-    21px;
-
+  border-radius: 21px;
 }
-
 
 .contact-location-card
 .location-label {
 
   color:
     var(--azul-medio);
-
 }
-
 
 .contact-location-card h3 {
 
-  margin-bottom:
-    2px;
+  margin-bottom: 2px;
 
   color:
     var(--azul-oscuro);
 
-  font-size:
-    23px;
-
+  font-size: 23px;
 }
-
 
 .contact-location-card p {
 
-  margin-bottom:
-    10px;
+  margin-bottom: 10px;
 
   color:
     var(--gris-texto);
-
 }
-
 
 .location-note {
 
   color:
     var(--gris-suave);
 
-  font-size:
-    12px;
-
+  font-size: 12px;
 }
-
 
 .contact-bottom {
 
-  max-width:
-    850px;
+  max-width: 850px;
 
   margin:
     28px auto 0;
 
-  text-align:
-    center;
-
+  text-align: center;
 }
-
 
 .contact-bottom p {
 
   color:
     var(--gris-suave);
 
-  font-size:
-    13px;
-
+  font-size: 13px;
 }
-
 
 
 /* =========================================
@@ -2476,66 +1840,42 @@ header {
 
 .floating-whatsapp {
 
-  position:
-    fixed;
+  position: fixed;
 
-  right:
-    22px;
+  right: 22px;
+  bottom: 22px;
 
-  bottom:
-    22px;
+  z-index: 2000;
 
-  z-index:
-    2000;
+  width: 60px;
+  height: 60px;
 
-  width:
-    60px;
+  display: flex;
 
-  height:
-    60px;
+  align-items: center;
+  justify-content: center;
 
-  display:
-    flex;
+  background: #25d366;
 
-  align-items:
-    center;
+  color: white;
 
-  justify-content:
-    center;
+  border-radius: 50%;
 
-  background:
-    #25d366;
-
-  color:
-    white;
-
-  border-radius:
-    50%;
-
-  font-size:
-    12px;
-
-  font-weight:
-    800;
+  font-size: 12px;
+  font-weight: 800;
 
   box-shadow:
-    0 12px 30px
-    rgba(0,0,0,.20);
+    0 12px 30px rgba(0,0,0,.20);
 
-  transition:
-    .2s ease;
-
+  transition: .2s ease;
 }
-
 
 .floating-whatsapp:hover {
 
   transform:
     translateY(-3px)
     scale(1.03);
-
 }
-
 
 
 /* =========================================
@@ -2547,407 +1887,245 @@ footer {
   padding:
     32px 15px;
 
-  text-align:
-    center;
+  text-align: center;
 
-  color:
-    #b9c7d1;
+  color: #b9c7d1;
 
-  background:
-    #051522;
+  background: #051522;
 
-  font-size:
-    12px;
-
+  font-size: 12px;
 }
-
 
 footer strong {
 
-  color:
-    white;
+  color: white;
 
-  font-size:
-    13px;
-
+  font-size: 13px;
 }
-
 
 
 /* =========================================
    TABLET
 ========================================= */
 
-@media
-(max-width: 950px) {
-
+@media (max-width: 950px) {
 
   .hero-grid {
-
-    grid-template-columns:
-      1fr;
-
+    grid-template-columns: 1fr;
   }
-
 
   .hero-text {
-
-    text-align:
-      center;
-
+    text-align: center;
   }
-
 
   .hero-description {
 
-    margin-left:
-      auto;
-
-    margin-right:
-      auto;
-
+    margin-left: auto;
+    margin-right: auto;
   }
-
 
   .hero-buttons {
-
-    justify-content:
-      center;
-
+    justify-content: center;
   }
-
 
   .hero-features {
 
-    max-width:
-      650px;
+    max-width: 650px;
 
-    margin-left:
-      auto;
-
-    margin-right:
-      auto;
-
+    margin-left: auto;
+    margin-right: auto;
   }
-
 
   .hero-photo-card {
-
-    max-width:
-      400px;
-
+    max-width: 400px;
   }
 
-
   .services-grid,
-
   .credentials-grid {
 
     grid-template-columns:
       repeat(2,1fr);
-
   }
-
 
   .areas-grid {
 
     grid-template-columns:
       repeat(2,1fr);
-
   }
-
 
   .profile-grid {
-
-    grid-template-columns:
-      1fr;
-
+    grid-template-columns: 1fr;
   }
-
 
   .profile-photo {
 
-    max-width:
-      430px;
+    max-width: 430px;
 
-    margin:
-      auto;
-
+    margin: auto;
   }
 
 }
-
 
 
 /* =========================================
    CELULAR
 ========================================= */
 
-@media
-(max-width: 760px) {
-
+@media (max-width: 760px) {
 
   header {
-
-    position:
-      relative;
-
+    position: relative;
   }
-
 
   .navbar {
-
-    padding:
-      13px 0;
-
+    padding: 13px 0;
   }
-
 
   .menu {
-
-    display:
-      none;
-
+    display: none;
   }
-
 
   .brand img {
 
-    width:
-      45px;
-
-    height:
-      45px;
-
+    width: 45px;
+    height: 45px;
   }
-
 
   .brand-info strong {
-
-    font-size:
-      12px;
-
+    font-size: 12px;
   }
-
 
   .brand-info span {
-
-    font-size:
-      9px;
-
+    font-size: 9px;
   }
-
 
   .hero {
-
-    min-height:
-      auto;
-
+    min-height: auto;
   }
-
 
   .hero-grid {
 
-    padding:
-      48px 0;
+    padding: 48px 0;
 
-    gap:
-      35px;
-
+    gap: 35px;
   }
-
 
   .hero h1 {
-
-    font-size:
-      2.45rem;
-
+    font-size: 2.45rem;
   }
-
 
   .hero-features {
-
-    grid-template-columns:
-      1fr;
-
+    grid-template-columns: 1fr;
   }
-
 
   section {
-
-    padding:
-      65px 0;
-
+    padding: 65px 0;
   }
-
 
   .services-grid,
-
   .studies-grid,
-
   .credentials-grid,
-
   .locations-grid,
-
   .when-grid {
 
-    grid-template-columns:
-      1fr;
-
+    grid-template-columns: 1fr;
   }
-
 
   .medicine-box {
-
-    padding:
-      25px;
-
+    padding: 25px;
   }
-
 
   .map-section {
-
-    grid-template-columns:
-      1fr;
-
+    grid-template-columns: 1fr;
   }
-
 
   .map-info {
-
-    padding:
-      28px 24px;
-
+    padding: 28px 24px;
   }
-
 
   .map-container,
-
   .map-container iframe {
 
-    min-height:
-      320px;
-
+    min-height: 320px;
   }
 
+  .reviews-box {
+
+    padding:
+      40px 24px;
+  }
 
   .contact-main {
-
-    grid-template-columns:
-      1fr;
-
+    grid-template-columns: 1fr;
   }
-
 
   .contact-info {
 
     padding:
       30px 24px;
-
   }
-
 
   .contact-actions {
-
-    flex-direction:
-      column;
-
+    flex-direction: column;
   }
-
 
   .contact-button {
-
-    width:
-      100%;
-
+    width: 100%;
   }
-
 
   .floating-whatsapp {
 
-    right:
-      16px;
+    right: 16px;
+    bottom: 16px;
 
-    bottom:
-      16px;
-
-    width:
-      56px;
-
-    height:
-      56px;
-
+    width: 56px;
+    height: 56px;
   }
 
 }
-
 
 
 /* =========================================
    CELULAR PEQUEÑO
 ========================================= */
 
-@media
-(max-width: 480px) {
-
+@media (max-width: 480px) {
 
   .areas-grid {
 
     grid-template-columns:
       1fr 1fr;
-
   }
-
 
   .hero h1 {
-
-    font-size:
-      2.15rem;
-
+    font-size: 2.15rem;
   }
-
 
   .hero h2 {
-
-    font-size:
-      1.2rem;
-
+    font-size: 1.2rem;
   }
-
 
   .hero-description {
-
-    font-size:
-      15px;
-
+    font-size: 15px;
   }
-
 
   .when-card {
 
     padding:
       65px 22px 24px;
-
   }
-
 
   .when-icon {
 
-    left:
-      22px;
-
-    top:
-      20px;
-
+    left: 22px;
+    top: 20px;
   }
 
 }
 
-
 </style>
 
 </head>
-
 
 
 <body>
@@ -2961,7 +2139,6 @@ footer strong {
 
   <div class="container navbar">
 
-
     <a
       href="#inicio"
       class="brand"
@@ -2971,7 +2148,6 @@ footer strong {
         src="images/logo-jmrs.png"
         alt="Logotipo Dr. José Miguel Rocha Sánchez"
       >
-
 
       <div class="brand-info">
 
@@ -2986,7 +2162,6 @@ footer strong {
       </div>
 
     </a>
-
 
 
     <nav class="menu">
@@ -3021,11 +2196,9 @@ footer strong {
 
     </nav>
 
-
   </div>
 
 </header>
-
 
 
 <main>
@@ -3042,24 +2215,19 @@ footer strong {
 
   <div class="container hero-grid">
 
-
     <div class="hero-text">
-
 
       <span class="hero-tag">
         MÉDICO INTERNISTA
       </span>
 
-
       <h1>
         Dr. José Miguel Rocha Sánchez
       </h1>
 
-
       <h2>
         Evaluación integral y precisa
       </h2>
-
 
       <p class="hero-description">
 
@@ -3070,9 +2238,7 @@ footer strong {
       </p>
 
 
-
       <div class="hero-buttons">
-
 
         <a
           href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20consulta%20de%20Medicina%20Interna."
@@ -3083,7 +2249,6 @@ footer strong {
           Agenda tu consulta
         </a>
 
-
         <a
           href="#servicios"
           class="button button-outline"
@@ -3091,13 +2256,10 @@ footer strong {
           Conoce los servicios
         </a>
 
-
       </div>
 
 
-
       <div class="hero-features">
-
 
         <div class="hero-feature">
 
@@ -3137,12 +2299,9 @@ footer strong {
 
         </div>
 
-
       </div>
 
-
     </div>
-
 
 
     <div class="hero-photo-wrapper">
@@ -3158,11 +2317,9 @@ footer strong {
 
     </div>
 
-
   </div>
 
 </section>
-
 
 
 <!-- =========================================
@@ -3172,7 +2329,6 @@ footer strong {
 <section class="internal-medicine">
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -3218,11 +2374,9 @@ footer strong {
 
     </div>
 
-
   </div>
 
 </section>
-
 
 
 <!-- =========================================
@@ -3232,7 +2386,6 @@ footer strong {
 <section id="servicios">
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -3252,9 +2405,7 @@ footer strong {
     </div>
 
 
-
     <div class="services-grid">
-
 
       <article class="service-card">
 
@@ -3272,7 +2423,6 @@ footer strong {
         </p>
 
       </article>
-
 
 
       <article class="service-card">
@@ -3293,7 +2443,6 @@ footer strong {
       </article>
 
 
-
       <article class="service-card">
 
         <span class="service-number">
@@ -3310,7 +2459,6 @@ footer strong {
         </p>
 
       </article>
-
 
 
       <article class="service-card">
@@ -3331,7 +2479,6 @@ footer strong {
       </article>
 
 
-
       <article class="service-card">
 
         <span class="service-number">
@@ -3348,7 +2495,6 @@ footer strong {
         </p>
 
       </article>
-
 
 
       <article class="service-card">
@@ -3368,14 +2514,11 @@ footer strong {
 
       </article>
 
-
     </div>
-
 
   </div>
 
 </section>
-
 
 
 <!-- =========================================
@@ -3385,7 +2528,6 @@ footer strong {
 <section class="studies">
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -3405,9 +2547,7 @@ footer strong {
     </div>
 
 
-
     <div class="studies-grid">
-
 
       <article class="study-card">
 
@@ -3426,7 +2566,6 @@ footer strong {
       </article>
 
 
-
       <article class="study-card">
 
         <h3>
@@ -3442,24 +2581,20 @@ footer strong {
 
       </article>
 
-
     </div>
-
 
   </div>
 
 </section>
 
 
-
 <!-- =========================================
-     ÁREAS DE ATENCIÓN
+     ÁREAS
 ========================================== -->
 
 <section>
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -3477,7 +2612,6 @@ footer strong {
       </p>
 
     </div>
-
 
 
     <div class="areas-grid">
@@ -3516,11 +2650,9 @@ footer strong {
 
     </div>
 
-
   </div>
 
 </section>
-
 
 
 <!-- =========================================
@@ -3533,7 +2665,6 @@ footer strong {
 >
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -3556,9 +2687,7 @@ footer strong {
     </div>
 
 
-
     <div class="when-grid">
-
 
       <article class="when-card">
 
@@ -3579,7 +2708,6 @@ footer strong {
         </p>
 
       </article>
-
 
 
       <article class="when-card">
@@ -3603,7 +2731,6 @@ footer strong {
       </article>
 
 
-
       <article class="when-card">
 
         <span class="when-icon">
@@ -3622,7 +2749,6 @@ footer strong {
         </p>
 
       </article>
-
 
 
       <article class="when-card">
@@ -3646,7 +2772,6 @@ footer strong {
       </article>
 
 
-
       <article class="when-card">
 
         <span class="when-icon">
@@ -3666,7 +2791,6 @@ footer strong {
         </p>
 
       </article>
-
 
 
       <article class="when-card">
@@ -3689,9 +2813,7 @@ footer strong {
 
       </article>
 
-
     </div>
-
 
 
     <div class="when-cta">
@@ -3700,33 +2822,25 @@ footer strong {
 
         Si no sabes qué especialista necesitas,
         una valoración por Medicina Interna puede
-        ayudar a orientar el diagnóstico y
-        los siguientes pasos.
+        ayudar a orientar el diagnóstico y los siguientes pasos.
 
       </p>
-
 
       <a
         href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20valoraci%C3%B3n%20de%20Medicina%20Interna."
         target="_blank"
         rel="noopener"
         class="button"
-        style="
-          background:#0d4772;
-          color:white;
-        "
+        style="background:#0d4772;color:white;"
       >
         Agendar una valoración
       </a>
 
-
     </div>
-
 
   </div>
 
 </section>
-
 
 
 <!-- =========================================
@@ -3740,7 +2854,6 @@ footer strong {
 
   <div class="container profile-grid">
 
-
     <div class="profile-photo">
 
       <img
@@ -3751,29 +2864,23 @@ footer strong {
     </div>
 
 
-
     <div class="profile-content">
-
 
       <span class="eyebrow">
         Sobre mí
       </span>
 
-
       <h2>
         Dr. José Miguel Rocha Sánchez
       </h2>
-
 
       <span class="profile-specialty">
         Médico Internista
       </span>
 
-
       <span class="profile-certified">
         Certificado por el Consejo Mexicano de Medicina Interna
       </span>
-
 
       <p>
 
@@ -3781,7 +2888,6 @@ footer strong {
         en la evaluación integral del paciente adulto.
 
       </p>
-
 
       <p>
 
@@ -3796,7 +2902,6 @@ footer strong {
 
       </p>
 
-
       <p>
 
         La consulta busca integrar síntomas,
@@ -3806,7 +2911,6 @@ footer strong {
 
       </p>
 
-
       <p>
 
         El objetivo es establecer diagnósticos precisos,
@@ -3815,14 +2919,11 @@ footer strong {
 
       </p>
 
-
     </div>
-
 
   </div>
 
 </section>
-
 
 
 <!-- =========================================
@@ -3835,7 +2936,6 @@ footer strong {
 >
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -3857,9 +2957,7 @@ footer strong {
     </div>
 
 
-
     <div class="credentials-grid">
-
 
       <article class="credential-card">
 
@@ -3880,7 +2978,6 @@ footer strong {
         </span>
 
       </article>
-
 
 
       <article class="credential-card">
@@ -3904,7 +3001,6 @@ footer strong {
       </article>
 
 
-
       <article class="credential-card certification-card">
 
         <span class="credential-type">
@@ -3925,14 +3021,11 @@ footer strong {
 
       </article>
 
-
     </div>
-
 
   </div>
 
 </section>
-
 
 
 <!-- =========================================
@@ -3945,7 +3038,6 @@ footer strong {
 >
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -3967,11 +3059,7 @@ footer strong {
     </div>
 
 
-
     <div class="locations-grid">
-
-
-      <!-- PUEBLA -->
 
       <div class="location-card">
 
@@ -3995,14 +3083,12 @@ footer strong {
           C.P. 72570, Puebla, Puebla
         </p>
 
-
         <p class="location-description">
 
           Consulta presencial de Medicina Interna
           con cita previa.
 
         </p>
-
 
         <a
           href="https://maps.app.goo.gl/EGhUhLtQEeJP8uM38"
@@ -4015,9 +3101,6 @@ footer strong {
 
       </div>
 
-
-
-      <!-- HUAMANTLA -->
 
       <div class="location-card">
 
@@ -4033,7 +3116,6 @@ footer strong {
           Huamantla, Tlaxcala
         </p>
 
-
         <p class="location-description">
 
           Consulta disponible en fechas programadas.
@@ -4041,7 +3123,6 @@ footer strong {
           al confirmar la cita.
 
         </p>
-
 
         <a
           href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20la%20disponibilidad%20de%20consulta%20de%20Medicina%20Interna%20en%20Huamantla%2C%20Tlaxcala."
@@ -4054,15 +3135,10 @@ footer strong {
 
       </div>
 
-
     </div>
 
 
-
-    <!-- MAPA PUEBLA -->
-
     <div class="map-section">
-
 
       <div class="map-info">
 
@@ -4086,7 +3162,6 @@ footer strong {
           C.P. 72570, Puebla, Puebla
         </p>
 
-
         <a
           href="https://maps.app.goo.gl/EGhUhLtQEeJP8uM38"
           target="_blank"
@@ -4097,7 +3172,6 @@ footer strong {
         </a>
 
       </div>
-
 
 
       <div class="map-container">
@@ -4112,14 +3186,62 @@ footer strong {
 
       </div>
 
-
     </div>
-
 
   </div>
 
 </section>
 
+
+<!-- =========================================
+     RESEÑAS GOOGLE
+========================================== -->
+
+<section
+  class="google-reviews"
+  id="resenas"
+>
+
+  <div class="container">
+
+    <div class="reviews-box">
+
+      <span class="review-stars">
+        ★★★★★
+      </span>
+
+      <span class="eyebrow">
+        Tu opinión es importante
+      </span>
+
+      <h2>
+        ¿Ya acudiste a consulta?
+      </h2>
+
+      <p>
+
+        Si deseas compartir tu experiencia,
+        puedes dejar una opinión en mi Perfil de Google.
+        Tu comentario puede ayudar a otros pacientes
+        a conocer el servicio de Medicina Interna.
+
+      </p>
+
+      <a
+        href="https://g.page/r/CYfzjienQRcjEAE/review"
+        target="_blank"
+        rel="noopener"
+        class="button button-review"
+        aria-label="Dejar una reseña en Google sobre la consulta del Dr. José Miguel Rocha Sánchez"
+      >
+        Dejar una reseña en Google
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 <!-- =========================================
@@ -4132,7 +3254,6 @@ footer strong {
 >
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -4154,12 +3275,9 @@ footer strong {
     </div>
 
 
-
     <div class="contact-main">
 
-
       <div class="contact-info">
-
 
         <img
           src="images/logo-jmrs.png"
@@ -4167,16 +3285,13 @@ footer strong {
           class="contact-logo"
         >
 
-
         <h3>
           Dr. José Miguel Rocha Sánchez
         </h3>
 
-
         <span class="contact-specialty">
           Medicina Interna
         </span>
-
 
         <p>
 
@@ -4187,9 +3302,7 @@ footer strong {
         </p>
 
 
-
         <div class="contact-actions">
-
 
           <a
             href="https://wa.me/522471012260?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20consulta%20de%20Medicina%20Interna."
@@ -4200,7 +3313,6 @@ footer strong {
             Agendar por WhatsApp
           </a>
 
-
           <a
             href="tel:+522471012260"
             class="contact-button phone"
@@ -4208,9 +3320,7 @@ footer strong {
             Llamar
           </a>
 
-
         </div>
-
 
 
         <a
@@ -4220,13 +3330,10 @@ footer strong {
           +52 247 101 2260
         </a>
 
-
       </div>
 
 
-
       <div class="contact-locations">
-
 
         <div class="contact-location-card">
 
@@ -4249,7 +3356,6 @@ footer strong {
         </div>
 
 
-
         <div class="contact-location-card">
 
           <span class="location-label">
@@ -4270,12 +3376,9 @@ footer strong {
 
         </div>
 
-
       </div>
 
-
     </div>
-
 
 
     <div class="contact-bottom">
@@ -4289,14 +3392,12 @@ footer strong {
 
     </div>
 
-
   </div>
 
 </section>
 
 
 </main>
-
 
 
 <!-- =========================================
@@ -4313,17 +3414,14 @@ footer strong {
 
   </p>
 
-
   <p>
     Médico Internista
   </p>
-
 
   <p>
     Cédula profesional 12355482 ·
     Cédula de especialidad 15715376
   </p>
-
 
   <p>
 
@@ -4332,14 +3430,12 @@ footer strong {
 
   </p>
 
-
   <p style="margin-top:10px;">
 
     Puebla, Puebla ·
     Atención programada en Huamantla, Tlaxcala
 
   </p>
-
 
   <p style="margin-top:12px;">
 
@@ -4348,7 +3444,6 @@ footer strong {
   </p>
 
 </footer>
-
 
 
 <!-- =========================================
